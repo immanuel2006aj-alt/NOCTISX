@@ -1,0 +1,1385 @@
+/*=========================================================
+NOCTIS TECHNOLOGIES
+ANIMATIONS.CSS
+VERSION 2.0
+PART 1A
+=========================================================*/
+
+
+/*==============================
+PRELOADER
+==============================*/
+
+.preloader{
+
+position:fixed;
+
+inset:0;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:#050505;
+
+z-index:999999;
+
+transition:.8s ease;
+
+}
+
+
+.preloader.hide{
+
+opacity:0;
+
+visibility:hidden;
+
+}
+
+
+.loader{
+
+position:relative;
+
+width:90px;
+
+height:90px;
+
+border-radius:50%;
+
+border:3px solid rgba(255,255,255,.08);
+
+border-top:3px solid #D4AF37;
+
+animation:loaderSpin 1s linear infinite;
+
+}
+
+
+.loader::before{
+
+content:"";
+
+position:absolute;
+
+inset:12px;
+
+border-radius:50%;
+
+border:2px solid transparent;
+
+border-right:2px solid #D4AF37;
+
+animation:loaderReverse 1.5s linear infinite;
+
+}
+
+
+/*==============================
+FADE ANIMATIONS
+==============================*/
+
+.fade-up{
+
+opacity:0;
+
+transform:translateY(60px);
+
+transition:1s ease;
+
+}
+
+
+.fade-down{
+
+opacity:0;
+
+transform:translateY(-60px);
+
+transition:1s ease;
+
+}
+
+
+.fade-left{
+
+opacity:0;
+
+transform:translateX(-70px);
+
+transition:1s ease;
+
+}
+
+
+.fade-right{
+
+opacity:0;
+
+transform:translateX(70px);
+
+transition:1s ease;
+
+}
+
+
+.zoom-in{
+
+opacity:0;
+
+transform:scale(.92);
+
+transition:1s ease;
+
+}
+
+
+.show{
+
+opacity:1;
+
+transform:none;
+
+}
+
+
+/*==============================
+FLOAT
+==============================*/
+
+.float{
+
+animation:float 5s ease-in-out infinite;
+
+}
+
+
+.float-slow{
+
+animation:floatSlow 8s ease-in-out infinite;
+
+}
+
+
+/*==============================
+ROTATE
+==============================*/
+
+.rotate{
+
+animation:rotate360 20s linear infinite;
+
+}
+
+
+.rotate-reverse{
+
+animation:rotateReverse 20s linear infinite;
+
+}
+
+
+/*==============================
+PULSE
+==============================*/
+
+.pulse{
+
+animation:pulseGlow 2.5s infinite;
+
+}
+
+
+/*==============================
+KEYFRAMES
+==============================*/
+
+@keyframes loaderSpin{
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+
+@keyframes loaderReverse{
+
+to{
+
+transform:rotate(-360deg);
+
+}
+
+}
+
+
+@keyframes float{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-18px);
+
+}
+
+}
+
+
+@keyframes floatSlow{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+}
+
+
+@keyframes rotate360{
+
+from{
+
+transform:rotate(0);
+
+}
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+
+@keyframes rotateReverse{
+
+from{
+
+transform:rotate(360deg);
+
+}
+
+to{
+
+transform:rotate(0);
+
+}
+
+}
+
+
+@keyframes pulseGlow{
+
+0%{
+
+transform:scale(1);
+
+box-shadow:0 0 0 rgba(212,175,55,.3);
+
+}
+
+50%{
+
+transform:scale(1.04);
+
+box-shadow:0 0 40px rgba(212,175,55,.35);
+
+}
+
+100%{
+
+transform:scale(1);
+
+box-shadow:0 0 0 rgba(212,175,55,0);
+
+}
+
+}
+
+/*=========================================================
+END PART 1A
+=========================================================*/
+/*=========================================================
+NOCTIS TECHNOLOGIES
+ANIMATIONS.CSS
+VERSION 2.0
+PART 1B
+HERO • BUTTON • CARD • IMAGE
+=========================================================*/
+
+
+/*==============================
+TEXT REVEAL
+==============================*/
+
+.reveal-text{
+
+opacity:0;
+
+transform:translateY(40px);
+
+animation:revealText 1s forwards;
+
+}
+
+.reveal-delay-1{
+
+animation-delay:.2s;
+
+}
+
+.reveal-delay-2{
+
+animation-delay:.4s;
+
+}
+
+.reveal-delay-3{
+
+animation-delay:.6s;
+
+}
+
+
+/*==============================
+HERO GLOW
+==============================*/
+
+.hero-glow{
+
+animation:heroGlow 6s ease-in-out infinite;
+
+}
+
+.hero-ring{
+
+animation:ringRotate 25s linear infinite;
+
+transform-origin:center;
+
+}
+
+
+/*==============================
+BUTTON SHINE
+==============================*/
+
+.primary-btn{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.primary-btn::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-130%;
+
+width:60%;
+
+height:100%;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+transparent,
+
+rgba(255,255,255,.45),
+
+transparent);
+
+transform:skewX(-25deg);
+
+transition:.8s;
+
+}
+
+.primary-btn:hover::before{
+
+left:150%;
+
+}
+
+
+/*==============================
+CARD HOVER
+==============================*/
+
+.service-card,
+
+.project-card,
+
+.blog-card,
+
+.value-card,
+
+.pricing-card{
+
+transition:
+
+transform .35s,
+
+box-shadow .35s,
+
+border-color .35s;
+
+}
+
+.service-card:hover,
+
+.project-card:hover,
+
+.blog-card:hover,
+
+.value-card:hover,
+
+.pricing-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+/*==============================
+IMAGE ZOOM
+==============================*/
+
+.image-hover{
+
+overflow:hidden;
+
+}
+
+.image-hover img{
+
+transition:1s;
+
+}
+
+.image-hover:hover img{
+
+transform:scale(1.08);
+
+}
+
+
+/*==============================
+ICON ANIMATION
+==============================*/
+
+.service-card svg,
+
+.value-card svg{
+
+transition:.45s;
+
+}
+
+.service-card:hover svg,
+
+.value-card:hover svg{
+
+transform:
+
+rotate(-8deg)
+
+scale(1.1);
+
+}
+
+
+/*==============================
+NAV LINK
+==============================*/
+
+.nav-links a{
+
+transition:.35s;
+
+}
+
+.nav-links a:hover{
+
+transform:translateY(-2px);
+
+}
+
+
+/*==============================
+SOCIAL ICON
+==============================*/
+
+.footer-social a{
+
+transition:.35s;
+
+}
+
+.footer-social a:hover{
+
+transform:
+
+translateY(-6px)
+
+rotate(-5deg);
+
+}
+
+
+/*==============================
+KEYFRAMES
+==============================*/
+
+@keyframes revealText{
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes heroGlow{
+
+0%,100%{
+
+transform:scale(1);
+
+filter:brightness(1);
+
+}
+
+50%{
+
+transform:scale(1.04);
+
+filter:brightness(1.15);
+
+}
+
+}
+
+@keyframes ringRotate{
+
+from{
+
+transform:rotate(0deg);
+
+}
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+/*=========================================================
+END PART 1B
+=========================================================*/
+/*=========================================================
+NOCTIS TECHNOLOGIES
+ANIMATIONS.CSS
+VERSION 2.0
+PART 1C
+SCROLL • BACKGROUND • PARTICLES • EFFECTS
+=========================================================*/
+
+
+/*==============================
+SCROLL REVEAL
+==============================*/
+
+.reveal{
+
+opacity:0;
+
+transform:translateY(70px);
+
+transition:
+
+opacity .9s ease,
+
+transform .9s ease;
+
+will-change:transform,opacity;
+
+}
+
+.reveal.active{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+/*==============================
+FADE SCALE
+==============================*/
+
+.fade-scale{
+
+opacity:0;
+
+transform:scale(.9);
+
+transition:.8s ease;
+
+}
+
+.fade-scale.active{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+
+/*==============================
+ROTATE IN
+==============================*/
+
+.rotate-in{
+
+opacity:0;
+
+transform:
+
+rotate(-8deg)
+
+scale(.9);
+
+transition:.9s ease;
+
+}
+
+.rotate-in.active{
+
+opacity:1;
+
+transform:
+
+rotate(0)
+
+scale(1);
+
+}
+
+
+/*==============================
+FLOATING BADGES
+==============================*/
+
+.hero-badge{
+
+animation:
+
+badgeFloat 5s ease-in-out infinite;
+
+}
+
+.badge-top{
+
+animation-delay:.3s;
+
+}
+
+.badge-bottom{
+
+animation-delay:1.2s;
+
+}
+
+
+/*==============================
+BACKGROUND GLOW
+==============================*/
+
+.glow{
+
+animation:
+
+glowPulse 7s ease-in-out infinite;
+
+}
+
+
+/*==============================
+DOTS
+==============================*/
+
+.hero-dots{
+
+animation:
+
+dotsMove 16s linear infinite;
+
+}
+
+
+/*==============================
+IMAGE FLOAT
+==============================*/
+
+.hero-image img{
+
+animation:
+
+heroImageFloat 6s ease-in-out infinite;
+
+}
+
+
+/*==============================
+TEXT SHIMMER
+==============================*/
+
+.text-gradient{
+
+background-size:220% auto;
+
+animation:
+
+textShimmer 6s linear infinite;
+
+}
+
+
+/*==============================
+CARD BORDER
+==============================*/
+
+.service-card::before,
+
+.project-card::before,
+
+.blog-card::before{
+
+animation:
+
+borderGlow 5s linear infinite;
+
+}
+
+
+/*==============================
+KEYFRAMES
+==============================*/
+
+@keyframes badgeFloat{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-14px);
+
+}
+
+}
+
+@keyframes glowPulse{
+
+0%,100%{
+
+opacity:.65;
+
+filter:blur(70px);
+
+}
+
+50%{
+
+opacity:1;
+
+filter:blur(95px);
+
+}
+
+}
+
+@keyframes dotsMove{
+
+from{
+
+background-position:0 0;
+
+}
+
+to{
+
+background-position:0 120px;
+
+}
+
+}
+
+@keyframes heroImageFloat{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+}
+
+@keyframes textShimmer{
+
+0%{
+
+background-position:0%;
+
+}
+
+100%{
+
+background-position:220%;
+
+}
+
+}
+
+@keyframes borderGlow{
+
+0%{
+
+opacity:.35;
+
+}
+
+50%{
+
+opacity:1;
+
+}
+
+100%{
+
+opacity:.35;
+
+}
+
+}
+
+
+/*=========================================================
+END PART 1C
+=========================================================*/
+/*=========================================================
+NOCTIS TECHNOLOGIES
+ANIMATIONS.CSS
+VERSION 2.0
+PART 1D
+BUTTONS • CURSOR • LOADER • RIPPLE
+=========================================================*/
+
+
+/*==============================
+BUTTON PRESS
+==============================*/
+
+.primary-btn:active,
+.secondary-btn:active{
+
+transform:scale(.97);
+
+}
+
+
+/*==============================
+RIPPLE
+==============================*/
+
+.ripple{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.ripple span{
+
+position:absolute;
+
+border-radius:50%;
+
+transform:scale(0);
+
+animation:rippleEffect .6s linear;
+
+background:rgba(255,255,255,.35);
+
+pointer-events:none;
+
+}
+
+
+/*==============================
+MAGNET
+==============================*/
+
+.magnetic{
+
+transition:
+
+transform .25s ease;
+
+will-change:transform;
+
+}
+
+
+/*==============================
+CURSOR
+==============================*/
+
+.cursor{
+
+position:fixed;
+
+width:18px;
+
+height:18px;
+
+border-radius:50%;
+
+background:#D4AF37;
+
+pointer-events:none;
+
+z-index:999999;
+
+mix-blend-mode:difference;
+
+transform:translate(-50%,-50%);
+
+transition:
+
+width .25s,
+
+height .25s,
+
+opacity .25s;
+
+}
+
+.cursor.active{
+
+width:48px;
+
+height:48px;
+
+opacity:.45;
+
+}
+
+
+/*==============================
+SCROLL PROGRESS
+==============================*/
+
+.scroll-progress{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+height:3px;
+
+width:0;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+#D4AF37,
+
+#FFE79D);
+
+z-index:999999;
+
+}
+
+
+/*==============================
+BACK TO TOP
+==============================*/
+
+.back-to-top{
+
+position:fixed;
+
+right:28px;
+
+bottom:28px;
+
+width:56px;
+
+height:56px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:18px;
+
+background:#111;
+
+border:1px solid rgba(212,175,55,.18);
+
+backdrop-filter:blur(16px);
+
+opacity:0;
+
+visibility:hidden;
+
+transition:.35s;
+
+z-index:999;
+
+}
+
+.back-to-top.show{
+
+opacity:1;
+
+visibility:visible;
+
+}
+
+.back-to-top:hover{
+
+transform:
+
+translateY(-8px)
+
+rotate(360deg);
+
+border-color:#D4AF37;
+
+}
+
+
+/*==============================
+LOADER TEXT
+==============================*/
+
+.loader-text{
+
+margin-top:24px;
+
+font-size:14px;
+
+letter-spacing:4px;
+
+text-transform:uppercase;
+
+color:#D4AF37;
+
+animation:loaderBlink 1.2s infinite;
+
+}
+
+
+/*==============================
+KEYFRAMES
+==============================*/
+
+@keyframes rippleEffect{
+
+to{
+
+transform:scale(4);
+
+opacity:0;
+
+}
+
+}
+
+@keyframes loaderBlink{
+
+0%,100%{
+
+opacity:1;
+
+}
+
+50%{
+
+opacity:.3;
+
+}
+
+}
+
+
+/*=========================================================
+END PART 1D
+=========================================================*/
+/*=========================================================
+NOCTIS TECHNOLOGIES
+ANIMATIONS.CSS
+VERSION 2.0
+PART 1E (FINAL)
+PERFORMANCE • ACCESSIBILITY • FINAL
+=========================================================*/
+
+
+/*==============================
+STAGGER ANIMATION
+==============================*/
+
+.stagger>*{
+
+opacity:0;
+
+transform:translateY(30px);
+
+animation:staggerFade .8s forwards;
+
+}
+
+.stagger>*:nth-child(1){
+
+animation-delay:.1s;
+
+}
+
+.stagger>*:nth-child(2){
+
+animation-delay:.2s;
+
+}
+
+.stagger>*:nth-child(3){
+
+animation-delay:.3s;
+
+}
+
+.stagger>*:nth-child(4){
+
+animation-delay:.4s;
+
+}
+
+.stagger>*:nth-child(5){
+
+animation-delay:.5s;
+
+}
+
+.stagger>*:nth-child(6){
+
+animation-delay:.6s;
+
+}
+
+
+/*==============================
+HOVER LIFT
+==============================*/
+
+.lift{
+
+transition:
+
+transform .35s,
+
+box-shadow .35s;
+
+}
+
+.lift:hover{
+
+transform:translateY(-12px);
+
+}
+
+
+/*==============================
+SMOOTH IMAGE
+==============================*/
+
+img{
+
+transition:
+
+transform .45s,
+
+opacity .45s;
+
+backface-visibility:hidden;
+
+}
+
+
+/*==============================
+SMOOTH SVG
+==============================*/
+
+svg{
+
+transition:
+
+transform .35s,
+
+opacity .35s;
+
+}
+
+
+/*==============================
+SMOOTH LINKS
+==============================*/
+
+a{
+
+transition:
+
+color .3s,
+
+background .3s,
+
+transform .3s;
+
+}
+
+
+/*==============================
+GPU ACCELERATION
+==============================*/
+
+.hero,
+
+.hero-image,
+
+.service-card,
+
+.project-card,
+
+.blog-card,
+
+.value-card,
+
+.pricing-card{
+
+transform:translateZ(0);
+
+will-change:transform;
+
+}
+
+
+/*==============================
+REDUCED MOTION
+==============================*/
+
+@media (prefers-reduced-motion:reduce){
+
+*{
+
+animation:none !important;
+
+transition:none !important;
+
+scroll-behavior:auto !important;
+
+}
+
+}
+
+
+/*==============================
+PRINT
+==============================*/
+
+@media print{
+
+*{
+
+animation:none !important;
+
+transition:none !important;
+
+}
+
+}
+
+
+/*==============================
+KEYFRAMES
+==============================*/
+
+@keyframes staggerFade{
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+/*=========================================================
+ANIMATIONS.CSS VERSION 2.0
+COMPLETE
+=========================================================*/
