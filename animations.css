@@ -1,0 +1,746 @@
+/*=========================================================
+FILE : animations.css
+PART : 3A
+Noctis Technologies
+=========================================================*/
+
+/*==============================
+SMOOTH TRANSITIONS
+==============================*/
+
+*{
+
+    transition:
+    color .35s ease,
+    background .35s ease,
+    border-color .35s ease;
+
+}
+
+/*==============================
+FADE UP
+==============================*/
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(80px);
+
+    transition:
+
+    opacity 1s ease,
+
+    transform 1s ease;
+
+}
+
+.fade-up.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*==============================
+FADE LEFT
+==============================*/
+
+.fade-left{
+
+    opacity:0;
+
+    transform:translateX(-100px);
+
+    transition:1s;
+
+}
+
+.fade-left.show{
+
+    opacity:1;
+
+    transform:none;
+
+}
+
+/*==============================
+FADE RIGHT
+==============================*/
+
+.fade-right{
+
+    opacity:0;
+
+    transform:translateX(100px);
+
+    transition:1s;
+
+}
+
+.fade-right.show{
+
+    opacity:1;
+
+    transform:none;
+
+}
+
+/*==============================
+ZOOM IN
+==============================*/
+
+.zoom{
+
+    opacity:0;
+
+    transform:scale(.85);
+
+    transition:1s;
+
+}
+
+.zoom.show{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+
+/*==============================
+FLOATING
+==============================*/
+
+.float{
+
+    animation:float 6s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==============================
+ROTATE
+==============================*/
+
+.rotate{
+
+    animation:rotate 12s linear infinite;
+
+}
+
+@keyframes rotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/*==============================
+BUTTON SHINE
+==============================*/
+
+.primary-btn{
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.primary-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:60%;
+
+    height:100%;
+
+    transform:skewX(-25deg);
+
+    background:
+
+    rgba(255,255,255,.35);
+
+}
+
+.primary-btn:hover::before{
+
+    animation:shine .8s;
+
+}
+
+@keyframes shine{
+
+    from{
+
+        left:-120%;
+
+    }
+
+    to{
+
+        left:150%;
+
+    }
+
+}
+
+/*==============================
+CARD HOVER
+==============================*/
+
+.service-card,
+
+.project-card,
+
+.blog-card,
+
+.feature-box,
+
+.value-card{
+
+    transition:
+
+    transform .45s ease,
+
+    box-shadow .45s ease;
+
+}
+
+.service-card:hover,
+
+.project-card:hover,
+
+.blog-card:hover,
+
+.feature-box:hover,
+
+.value-card:hover{
+
+    transform:
+
+    translateY(-12px);
+
+}
+
+/*==============================
+IMAGE PARALLAX READY
+==============================*/
+
+.parallax{
+
+    transition:transform .25s linear;
+
+}
+
+/*==============================
+TEXT GLOW
+==============================*/
+
+.glow{
+
+    text-shadow:
+
+    0 0 12px rgba(212,175,55,.35);
+
+}
+
+/*==============================
+END PART 3A
+=========================================================*/
+/*=========================================================
+FILE : animations.css
+PART : 3B
+Premium Effects
+=========================================================*/
+
+
+/*==============================
+LOADING FADE
+==============================*/
+
+body.loading{
+
+    overflow:hidden;
+
+}
+
+body.loaded{
+
+    animation:pageFade .8s ease forwards;
+
+}
+
+@keyframes pageFade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+
+/*==============================
+SCROLL PROGRESS BAR
+==============================*/
+
+.progress-bar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:0%;
+
+    height:3px;
+
+    z-index:99999;
+
+    background:linear-gradient(
+    90deg,
+    #ffffff,
+    var(--primary));
+
+}
+
+
+/*==============================
+GLOW BACKGROUND
+==============================*/
+
+.glow-bg{
+
+    position:absolute;
+
+    width:650px;
+
+    height:650px;
+
+    border-radius:50%;
+
+    filter:blur(140px);
+
+    background:
+
+    radial-gradient(circle,
+    rgba(212,175,55,.12),
+    transparent 70%);
+
+    animation:glowMove 14s ease infinite;
+
+}
+
+@keyframes glowMove{
+
+    0%{
+
+        transform:
+        translate(0,0);
+
+    }
+
+    50%{
+
+        transform:
+        translate(80px,-50px);
+
+    }
+
+    100%{
+
+        transform:
+        translate(0,0);
+
+    }
+
+}
+
+
+/*==============================
+GLASS REFLECTION
+==============================*/
+
+.glass{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.glass::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+
+    120deg,
+
+    transparent,
+
+    rgba(255,255,255,.08),
+
+    transparent);
+
+    transform:translateX(-120%);
+
+}
+
+.glass:hover::before{
+
+    animation:glassLight 1.1s;
+
+}
+
+@keyframes glassLight{
+
+    from{
+
+        transform:
+        translateX(-120%);
+
+    }
+
+    to{
+
+        transform:
+        translateX(150%);
+
+    }
+
+}
+
+
+/*==============================
+IMAGE GLOW
+==============================*/
+
+.project-image{
+
+    position:relative;
+
+}
+
+.project-image::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+
+    to top,
+
+    rgba(0,0,0,.45),
+
+    transparent);
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.project-card:hover
+.project-image::after{
+
+    opacity:1;
+
+}
+
+
+/*==============================
+ICON BOUNCE
+==============================*/
+
+.service-icon{
+
+    transition:.4s;
+
+}
+
+.service-card:hover
+.service-icon{
+
+    animation:bounce .6s;
+
+}
+
+@keyframes bounce{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    30%{
+
+        transform:scale(1.2);
+
+    }
+
+    60%{
+
+        transform:scale(.92);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+/*==============================
+SOCIAL HOVER
+==============================*/
+
+.social-links a{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.social-links a::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:120%;
+
+    height:120%;
+
+    border-radius:50%;
+
+    background:
+
+    rgba(255,255,255,.15);
+
+    transform:scale(0);
+
+    transition:.35s;
+
+}
+
+.social-links a:hover::before{
+
+    transform:scale(1);
+
+}
+
+
+/*==============================
+UNDERLINE ANIMATION
+==============================*/
+
+.animated-link{
+
+    position:relative;
+
+}
+
+.animated-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-5px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:.35s;
+
+}
+
+.animated-link:hover::after{
+
+    width:100%;
+
+}
+
+
+/*==============================
+TEXT REVEAL
+==============================*/
+
+.reveal{
+
+    overflow:hidden;
+
+}
+
+.reveal span{
+
+    display:block;
+
+    transform:translateY(120%);
+
+    animation:
+
+    revealText
+
+    1s ease forwards;
+
+}
+
+@keyframes revealText{
+
+    to{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/*==============================
+HERO IMAGE FLOAT
+==============================*/
+
+.hero-right img{
+
+    animation:
+
+    heroFloat
+
+    7s ease-in-out infinite;
+
+}
+
+@keyframes heroFloat{
+
+    0%{
+
+        transform:
+        translateY(0);
+
+    }
+
+    50%{
+
+        transform:
+        translateY(-18px);
+
+    }
+
+    100%{
+
+        transform:
+        translateY(0);
+
+    }
+
+}
+
+
+/*==============================
+BUTTON PULSE
+==============================*/
+
+.primary-btn:hover{
+
+    animation:
+
+    pulse .8s;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.04);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+/*==============================
+END PART 3B
+=========================================================*/
