@@ -1,90 +1,176 @@
 /*=========================================================
-FILE : responsive.css
-PART : 4A
-Desktop • Laptop • Tablet • Mobile
+NOCTIS TECHNOLOGIES
+RESPONSIVE.CSS
+VERSION 2.0
+PART 1A
+LARGE DESKTOP & LAPTOP
 =========================================================*/
 
 
-/*=========================================
-1400px
-=========================================*/
+/*==============================
+4K DISPLAY
+==============================*/
+
+@media (min-width:1921px){
+
+:root{
+
+--container:1700px;
+
+}
+
+.hero h1{
+
+font-size:110px;
+
+}
+
+.section-heading h2{
+
+font-size:78px;
+
+}
+
+section{
+
+padding:180px 0;
+
+}
+
+.container{
+
+max-width:1700px;
+
+}
+
+}
+
+
+/*==============================
+LARGE DESKTOP
+==============================*/
+
+@media (max-width:1600px){
+
+:root{
+
+--container:1450px;
+
+}
+
+.hero h1{
+
+font-size:84px;
+
+}
+
+.section-heading h2{
+
+font-size:60px;
+
+}
+
+}
+
+
+/*==============================
+DESKTOP
+==============================*/
 
 @media (max-width:1400px){
 
-.container,
-.hero-container,
-.about-grid,
+:root{
+
+--container:1280px;
+
+}
+
+.hero-grid{
+
+gap:60px;
+
+}
+
 .services-grid,
-.portfolio-grid,
-.blog-grid,
-.footer-grid{
 
-width:92%;
+.values-grid,
 
-}
-
-.hero-container{
-
-gap:70px;
-
-}
-
-}
-
-
-/*=========================================
-1200px
-=========================================*/
-
-@media (max-width:1200px){
-
-.navbar{
-
-padding:15px 25px;
-
-}
-
-.logo img{
-
-width:165px;
-
-}
-
-.nav-links{
+.blog-grid{
 
 gap:28px;
 
 }
 
-.hero-container{
+.footer-grid{
 
-grid-template-columns:1fr 470px;
-
-gap:60px;
+gap:40px;
 
 }
 
-.hero-left h1{
+}
 
-font-size:4.4rem;
+
+/*==============================
+LAPTOP
+==============================*/
+
+@media (max-width:1200px){
+
+:root{
+
+--container:1100px;
 
 }
 
-.about-grid{
+.hero-grid{
 
-grid-template-columns:450px 1fr;
+grid-template-columns:1fr;
 
-gap:60px;
+text-align:center;
 
-}
-
-.services-grid{
-
-grid-template-columns:repeat(2,1fr);
+gap:80px;
 
 }
 
-.portfolio-grid{
+.hero-content{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.hero p{
+
+margin:auto;
+
+max-width:700px;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.hero-image{
+
+max-width:650px;
+
+margin:auto;
+
+}
+
+.services-grid,
+
+.values-grid,
+
+.stats-grid,
+
+.pricing-grid{
 
 grid-template-columns:repeat(2,1fr);
 
@@ -96,20 +182,54 @@ grid-template-columns:repeat(2,1fr);
 
 }
 
+.portfolio-grid{
+
+grid-template-columns:1fr;
+
+}
+
 .footer-grid{
 
 grid-template-columns:repeat(2,1fr);
 
 }
 
+.contact-box{
+
+padding:70px 50px;
+
+}
+
+}
+/*=========================================================
+NOCTIS TECHNOLOGIES
+RESPONSIVE.CSS
+VERSION 2.0
+PART 1B
+TABLET
+=========================================================*/
+
+
+/*==============================
+TABLET
+==============================*/
+
+@media (max-width:992px){
+
+:root{
+
+--container:92%;
+
 }
 
 
-/*=========================================
-992px
-=========================================*/
+/* HEADER */
 
-@media (max-width:992px){
+header{
+
+padding:14px 0;
+
+}
 
 .nav-links{
 
@@ -117,9 +237,9 @@ display:none;
 
 }
 
-.theme-btn{
+.menu-btn{
 
-display:none;
+display:flex;
 
 }
 
@@ -129,17 +249,46 @@ display:none;
 
 }
 
+
+/* HERO */
+
 .hero{
 
-padding-top:170px;
+padding-top:160px;
+
+padding-bottom:100px;
 
 }
 
-.hero-container{
+.hero-grid{
 
 grid-template-columns:1fr;
 
+gap:70px;
+
+}
+
+.hero-content{
+
 text-align:center;
+
+align-items:center;
+
+}
+
+.hero h1{
+
+font-size:64px;
+
+max-width:100%;
+
+}
+
+.hero p{
+
+max-width:680px;
+
+margin:auto;
 
 }
 
@@ -149,13 +298,10 @@ justify-content:center;
 
 }
 
-.hero-right{
 
-margin-top:70px;
+/* IMAGE */
 
-}
-
-.hero-right img{
+.hero-image{
 
 max-width:520px;
 
@@ -163,43 +309,64 @@ margin:auto;
 
 }
 
-.about-grid{
+.badge-top{
 
-grid-template-columns:1fr;
+left:0;
 
-}
-
-.about-left{
-
-order:2;
+top:-20px;
 
 }
 
-.about-right{
+.badge-bottom{
 
-order:1;
+right:0;
 
-text-align:center;
-
-}
-
-.about-features{
-
-grid-template-columns:repeat(2,1fr);
+bottom:-20px;
 
 }
 
-.values-grid{
 
-grid-template-columns:1fr;
+/* SECTION */
+
+section{
+
+padding:100px 0;
+
+}
+
+.section-heading{
+
+margin-bottom:70px;
 
 }
 
-.services-grid{
+.section-heading h2{
 
-grid-template-columns:1fr;
+font-size:50px;
 
 }
+
+
+/* GRID */
+
+.services-grid,
+
+.values-grid,
+
+.blog-grid,
+
+.stats-grid,
+
+.pricing-grid,
+
+.footer-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+
+/* PORTFOLIO */
 
 .portfolio-grid{
 
@@ -207,79 +374,127 @@ grid-template-columns:1fr;
 
 }
 
-.blog-grid{
+
+/* CONTACT */
+
+.contact-box{
+
+padding:60px 40px;
+
+}
+
+
+/* FORM */
+
+.checkbox-grid{
 
 grid-template-columns:1fr;
 
 }
 
-.footer-grid{
 
-grid-template-columns:1fr;
+/* NEWSLETTER */
+
+.newsletter-box{
+
+padding:60px 40px;
+
+}
+
+.newsletter-box form{
+
+flex-direction:column;
+
+}
+
+.newsletter-box input{
+
+max-width:100%;
+
+width:100%;
+
+}
+
+
+/* FOOTER */
+
+.footer-bottom{
+
+flex-direction:column;
 
 text-align:center;
 
-}
-
-.social-links{
-
-justify-content:center;
+gap:20px;
 
 }
 
-}
+  }
 /*=========================================================
-FILE : responsive.css
-PART : 4B
-TABLET • MOBILE • SMALL DEVICES
+NOCTIS TECHNOLOGIES
+RESPONSIVE.CSS
+VERSION 2.0
+PART 1C
+MOBILE
 =========================================================*/
 
 
-/*=========================================
-768px
-=========================================*/
+/*==============================
+MOBILE
+==============================*/
 
 @media (max-width:768px){
 
-section{
+:root{
 
-padding:90px 0;
+--container:94%;
 
 }
 
-.navbar{
 
-padding:14px 18px;
+/* HEADER */
 
-border-radius:18px;
+header{
+
+padding:12px 0;
 
 }
 
 .logo img{
 
-width:145px;
+width:48px;
 
 }
+
+.logo{
+
+font-size:22px;
+
+}
+
+
+/* HERO */
 
 .hero{
 
-min-height:auto;
-
 padding-top:140px;
 
-}
-
-.hero-left h1{
-
-font-size:3.2rem;
-
-line-height:1.15;
+padding-bottom:80px;
 
 }
 
-.hero-left p{
+.hero h1{
+
+font-size:46px;
+
+line-height:1.08;
+
+}
+
+.hero p{
 
 font-size:16px;
+
+margin-top:20px;
 
 }
 
@@ -289,7 +504,7 @@ flex-direction:column;
 
 width:100%;
 
-gap:15px;
+gap:16px;
 
 }
 
@@ -303,135 +518,290 @@ justify-content:center;
 
 }
 
-.hero-right img{
 
-max-width:420px;
+/* HERO IMAGE */
 
-}
+.hero-image{
 
-.about-features{
-
-grid-template-columns:1fr;
+max-width:100%;
 
 }
 
-.newsletter form{
+.hero-image img{
 
-flex-direction:column;
-
-}
-
-.newsletter input{
-
-width:100%;
-
-}
-
-.newsletter button{
-
-width:100%;
-
-}
-
-.cta-content,
-
-.newsletter-box,
-
-.contact-box{
-
-padding:45px;
-
-}
+border-radius:24px;
 
 }
 
 
-/*=========================================
-576px
-=========================================*/
+/* BADGES */
 
-@media (max-width:576px){
+.hero-badge{
 
-.hero-left h1{
+display:none;
 
-font-size:2.8rem;
+}
+
+.floating-card{
+
+display:none;
+
+}
+
+
+/* SECTION */
+
+section{
+
+padding:90px 0;
+
+}
+
+.section-heading{
+
+margin-bottom:60px;
 
 }
 
 .section-heading h2{
 
-font-size:2rem;
+font-size:38px;
 
 }
 
-.service-card,
+.section-heading p{
 
-.project-card,
-
-.blog-card,
-
-.feature-box,
-
-.value-card{
-
-padding:28px;
-
-}
-
-.footer-about img{
-
-width:150px;
-
-}
-
-.social-links{
-
-gap:12px;
-
-}
-
-.social-links a{
-
-width:46px;
-
-height:46px;
-
-}
+font-size:16px;
 
 }
 
 
-/*=========================================
-425px
-=========================================*/
+/* GRID */
 
-@media (max-width:425px){
+.services-grid,
 
-.hero{
+.values-grid,
 
-padding-top:120px;
+.stats-grid,
+
+.pricing-grid,
+
+.blog-grid,
+
+.footer-grid,
+
+.checkbox-grid{
+
+grid-template-columns:1fr;
+
+gap:24px;
 
 }
 
-.hero-left h1{
 
-font-size:2.4rem;
+/* CONTACT */
+
+.contact-box{
+
+padding:45px 28px;
+
+border-radius:26px;
 
 }
 
-.hero-left p{
+.contact-box h2{
+
+font-size:36px;
+
+}
+
+
+/* FORM */
+
+.contact-form-card{
+
+padding:26px;
+
+}
+
+
+/* PORTFOLIO */
+
+.project-image{
+
+height:240px;
+
+}
+
+
+/* BLOG */
+
+.blog-image{
+
+height:220px;
+
+}
+
+
+/* TIMELINE */
+
+.timeline-wrapper{
+
+padding-left:28px;
+
+}
+
+.timeline-wrapper::before{
+
+left:14px;
+
+}
+
+.timeline-number{
+
+width:40px;
+
+height:40px;
+
+font-size:14px;
+
+}
+
+
+/* NEWSLETTER */
+
+.newsletter-box{
+
+padding:40px 24px;
+
+}
+
+
+/* FOOTER */
+
+.footer{
+
+padding:70px 0 30px;
+
+}
+
+.footer-social{
+
+justify-content:center;
+
+}
+
+.footer-bottom{
+
+text-align:center;
+
+}
+
+
+/* COOKIE */
+
+.cookie-wrapper{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+.cookie-actions{
+
+width:100%;
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+.cookie-actions button{
+
+width:100%;
+
+}
+
+}
+/*=========================================================
+NOCTIS TECHNOLOGIES
+RESPONSIVE.CSS
+VERSION 2.0
+PART 1D
+SMALL MOBILE
+=========================================================*/
+
+
+/*==============================
+SMALL MOBILE
+==============================*/
+
+@media (max-width:576px){
+
+:root{
+
+--container:95%;
+
+}
+
+
+/* TYPOGRAPHY */
+
+body{
 
 font-size:15px;
 
 }
 
-.hero-tag{
+.hero h1{
 
-font-size:11px;
-
-padding:8px 14px;
+font-size:40px;
 
 }
+
+.hero p{
+
+font-size:15px;
+
+}
+
+.section-heading h2{
+
+font-size:34px;
+
+}
+
+.section-heading p{
+
+font-size:15px;
+
+}
+
+
+/* NAVBAR */
+
+.navbar{
+
+gap:14px;
+
+}
+
+.logo{
+
+font-size:20px;
+
+}
+
+.logo img{
+
+width:44px;
+
+}
+
+
+/* BUTTONS */
 
 .primary-btn,
 
@@ -441,101 +811,210 @@ padding:16px 20px;
 
 font-size:15px;
 
-}
-
-.about-right h3{
-
-font-size:32px;
-
-}
-
-.service-icon{
-
-width:65px;
-
-height:65px;
-
-font-size:24px;
-
-}
-
-.newsletter-box,
-
-.contact-box,
-
-.cta-content{
-
-padding:35px 22px;
-
-}
+border-radius:14px;
 
 }
 
 
-/*=========================================
-375px
-=========================================*/
-
-@media (max-width:375px){
-
-.hero-left h1{
-
-font-size:2.15rem;
-
-}
-
-.hero-left p{
-
-font-size:14px;
-
-}
-
-.section-heading h2{
-
-font-size:1.8rem;
-
-}
+/* CARDS */
 
 .service-card,
 
-.project-content,
+.value-card,
 
-.blog-content{
+.pricing-card,
+
+.blog-card,
+
+.project-card{
+
+border-radius:22px;
+
+}
+
+.service-card{
+
+padding:26px;
+
+}
+
+.value-card{
+
+padding:24px;
+
+}
+
+.pricing-card{
+
+padding:30px;
+
+}
+
+
+/* IMAGES */
+
+.project-image{
+
+height:220px;
+
+}
+
+.blog-image{
+
+height:200px;
+
+}
+
+
+/* CONTACT */
+
+.contact-box{
+
+padding:38px 22px;
+
+}
+
+.contact-box h2{
+
+font-size:30px;
+
+}
+
+.contact-form-card{
 
 padding:22px;
 
 }
 
-.navbar{
 
-padding:12px 15px;
+/* NEWSLETTER */
 
-}
+.newsletter-box{
 
-.logo img{
-
-width:130px;
+padding:34px 20px;
 
 }
 
-}
+.newsletter-box h2{
 
-
-/*=========================================
-320px
-=========================================*/
-
-@media (max-width:320px){
-
-.hero-left h1{
-
-font-size:1.95rem;
+font-size:30px;
 
 }
 
-.hero-left p{
 
-font-size:13px;
+/* FOOTER */
+
+.footer-grid{
+
+gap:34px;
+
+}
+
+.footer-column h3{
+
+font-size:20px;
+
+}
+
+.footer-social{
+
+gap:10px;
+
+}
+
+.footer-social a{
+
+width:42px;
+
+height:42px;
+
+}
+
+}
+
+
+/*==============================
+ULTRA SMALL
+==============================*/
+
+@media (max-width:480px){
+
+.hero{
+
+padding-top:125px;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero-tag{
+
+font-size:10px;
+
+padding:8px 12px;
+
+letter-spacing:1px;
+
+}
+
+.section{
+
+padding:70px 0;
+
+}
+
+.container{
+
+width:94%;
+
+}
+
+.service-card{
+
+padding:22px;
+
+}
+
+.contact-box{
+
+padding:32px 18px;
+
+}
+
+.contact-form-card{
+
+padding:18px;
+
+}
+
+.footer{
+
+padding:60px 0 24px;
+
+}
+
+}
+
+
+/*==============================
+EXTRA SMALL
+==============================*/
+
+@media (max-width:360px){
+
+.hero h1{
+
+font-size:30px;
+
+}
+
+.section-heading h2{
+
+font-size:28px;
 
 }
 
@@ -545,47 +1024,296 @@ font-size:13px;
 
 font-size:14px;
 
-padding:15px 18px;
+padding:14px 18px;
 
 }
 
-.hero-buttons{
+.logo{
 
-gap:12px;
-
-}
-
-.section-tag{
-
-font-size:10px;
-
-letter-spacing:1px;
+font-size:18px;
 
 }
 
-.service-icon{
+.logo img{
 
-width:58px;
-
-height:58px;
-
-font-size:22px;
+width:40px;
 
 }
 
-.footer-bottom p{
+.contact-box h2{
 
-font-size:13px;
+font-size:26px;
 
 }
+
+.footer-column h3{
+
+font-size:18px;
+
+}
+
+}
+/*=========================================================
+NOCTIS TECHNOLOGIES
+RESPONSIVE.CSS
+VERSION 2.0
+PART 1E (FINAL)
+LANDSCAPE
+ACCESSIBILITY
+PERFORMANCE
+=========================================================*/
+
+
+/*==============================
+LANDSCAPE MOBILE
+==============================*/
+
+@media (max-height:600px) and (orientation:landscape){
+
+.hero{
+
+padding-top:110px;
+
+padding-bottom:70px;
+
+}
+
+section{
+
+padding:70px 0;
+
+}
+
+.hero-grid{
+
+gap:40px;
+
+}
+
+}
+
+
+/*==============================
+FOLDABLE DEVICES
+==============================*/
+
+@media (max-width:900px){
+
+.hero-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.hero-image{
+
+margin-top:30px;
+
+}
+
+}
+
+
+/*==============================
+SAFE AREA
+==============================*/
+
+body{
+
+padding-left:env(safe-area-inset-left);
+
+padding-right:env(safe-area-inset-right);
+
+padding-top:env(safe-area-inset-top);
+
+padding-bottom:env(safe-area-inset-bottom);
+
+}
+
+
+/*==============================
+LARGE SCREENS
+==============================*/
+
+@media (min-width:2200px){
+
+.container{
+
+max-width:1800px;
+
+}
+
+.hero h1{
+
+font-size:110px;
+
+}
+
+.section-heading h2{
+
+font-size:82px;
+
+}
+
+}
+
+
+/*==============================
+HOVER DEVICES
+==============================*/
+
+@media (hover:hover){
+
+.primary-btn:hover{
+
+transform:translateY(-5px);
+
+}
+
+.secondary-btn:hover{
+
+transform:translateY(-5px);
+
+}
+
+.service-card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.project-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+}
+
+
+/*==============================
+TOUCH DEVICES
+==============================*/
+
+@media (hover:none){
+
+.primary-btn:active,
+
+.secondary-btn:active{
+
+transform:scale(.97);
+
+}
+
+}
+
+
+/*==============================
+REDUCED MOTION
+==============================*/
+
+@media (prefers-reduced-motion:reduce){
+
+*{
+
+animation:none !important;
+
+transition:none !important;
+
+scroll-behavior:auto !important;
+
+}
+
+}
+
+
+/*==============================
+PRINT
+==============================*/
+
+@media print{
+
+header,
+
+footer,
+
+.cookie-banner,
+
+.back-to-top,
+
+.primary-btn,
+
+.secondary-btn,
+
+.menu-btn{
+
+display:none !important;
+
+}
+
+body{
+
+background:#fff !important;
+
+color:#000 !important;
+
+}
+
+section{
+
+padding:20px 0;
+
+}
+
+}
+
+
+/*==============================
+IMAGE OPTIMIZATION
+==============================*/
 
 img{
+
+height:auto;
+
+max-width:100%;
+
+}
+
+
+/*==============================
+VIDEO
+==============================*/
+
+video{
 
 max-width:100%;
 
 height:auto;
 
+display:block;
+
 }
+
+
+/*==============================
+IFRAME
+==============================*/
+
+iframe{
+
+max-width:100%;
+
+border:none;
+
+}
+
+
+/*==============================
+OVERFLOW FIX
+==============================*/
+
+html,
 
 body{
 
@@ -593,8 +1321,8 @@ overflow-x:hidden;
 
 }
 
-}
 
 /*=========================================================
-END OF responsive.css
+RESPONSIVE.CSS VERSION 2.0
+COMPLETE
 =========================================================*/
