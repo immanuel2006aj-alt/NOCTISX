@@ -1,0 +1,2995 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+About • Noctis Technologies
+</title>
+
+<meta name="description"
+content="Learn more about Noctis Technologies, our vision, mission and commitment to building premium digital experiences.">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="index.css">
+
+<style>
+
+/* Paste About Page CSS Here */
+<style>
+
+/*==============================
+RESET
+==============================*/
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:"Inter",sans-serif;
+
+background:#050505;
+
+color:#ffffff;
+
+overflow-x:hidden;
+
+line-height:1.7;
+
+}
+
+img{
+
+display:block;
+
+max-width:100%;
+
+}
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+ul{
+
+list-style:none;
+
+}
+
+/*==============================
+ROOT
+==============================*/
+
+:root{
+
+--primary:#E11D2E;
+
+--background:#050505;
+
+--card:#111111;
+
+--card2:#161616;
+
+--text:#B5B5B5;
+
+--white:#FFFFFF;
+
+--border:#242424;
+
+--radius:28px;
+
+--transition:.35s ease;
+
+}
+
+/*==============================
+CONTAINER
+==============================*/
+
+.container{
+
+width:min(1180px,92%);
+
+margin:auto;
+
+}
+
+/*==============================
+SECTION
+==============================*/
+
+section{
+
+padding:110px 0;
+
+}
+
+.section-badge{
+
+display:inline-flex;
+
+padding:10px 18px;
+
+border-radius:100px;
+
+background:rgba(225,29,46,.12);
+
+border:1px solid rgba(225,29,46,.18);
+
+font-size:13px;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+color:var(--primary);
+
+margin-bottom:20px;
+
+}
+
+.section-header{
+
+text-align:center;
+
+max-width:760px;
+
+margin:0 auto 70px;
+
+}
+
+.section-header h2{
+
+font-family:"Sora",sans-serif;
+
+font-size:46px;
+
+margin:18px 0;
+
+line-height:1.15;
+
+}
+
+.section-header p{
+
+color:var(--text);
+
+font-size:17px;
+
+line-height:1.9;
+
+}
+
+/* Continue with Header, Buttons, Hero,
+Story, Cards, Timeline, Footer... */
+/*==================================================
+                    HEADER
+==================================================*/
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    background:rgba(5,5,5,.92);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.navbar{
+
+    height:82px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+.logo img{
+
+    height:44px;
+
+}
+
+.nav-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:38px;
+
+}
+
+.nav-menu a{
+
+    color:#d6d6d6;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    transition:var(--transition);
+
+}
+
+.nav-menu a:hover,
+
+.nav-menu a.active{
+
+    color:var(--primary);
+
+}
+
+.nav-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+
+
+/*==================================================
+                    BUTTONS
+==================================================*/
+
+.btn-primary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:16px 34px;
+
+    border-radius:16px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-weight:700;
+
+    transition:var(--transition);
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 20px 45px rgba(225,29,46,.28);
+
+}
+
+.btn-secondary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:16px 34px;
+
+    border-radius:16px;
+
+    border:1px solid var(--border);
+
+    color:#fff;
+
+    transition:var(--transition);
+
+}
+
+.btn-secondary:hover{
+
+    border-color:var(--primary);
+
+    background:#111;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+}
+
+
+
+/*==================================================
+                MOBILE MENU
+==================================================*/
+
+.menu-btn{
+
+    display:none;
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    background:#111;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+}
+
+.menu-btn img{
+
+    width:26px;
+
+    margin:auto;
+
+}
+
+.mobile-menu{
+
+    position:fixed;
+
+    top:0;
+
+    right:-100%;
+
+    width:300px;
+
+    height:100vh;
+
+    background:#090909;
+
+    padding:100px 35px;
+
+    transition:.4s;
+
+    z-index:1200;
+
+    border-left:1px solid var(--border);
+
+}
+
+.mobile-menu.active{
+
+    right:0;
+
+}
+
+.mobile-menu a{
+
+    display:block;
+
+    margin-bottom:22px;
+
+    font-size:18px;
+
+    color:#fff;
+
+}
+
+.close-btn{
+
+    position:absolute;
+
+    top:25px;
+
+    right:25px;
+
+    width:48px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#111;
+
+    cursor:pointer;
+
+}
+
+.close-btn img{
+
+    width:22px;
+
+    margin:auto;
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(max-width:991px){
+
+    .nav-menu{
+
+        display:none;
+
+    }
+
+    .menu-btn{
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:center;
+
+    }
+
+}
+/*==================================================
+                ABOUT HERO
+==================================================*/
+
+.about-hero{
+
+    position:relative;
+
+    padding:170px 0 120px;
+
+    overflow:hidden;
+
+}
+
+.about-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    top:-120px;
+
+    right:-120px;
+
+    background:rgba(225,29,46,.12);
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+}
+
+.about-hero-grid{
+
+    display:grid;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.about-content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.about-content h1{
+
+    font-family:"Sora",sans-serif;
+
+    font-size:58px;
+
+    line-height:1.1;
+
+    margin:24px 0;
+
+}
+
+.about-content p{
+
+    max-width:620px;
+
+    color:var(--text);
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    margin-bottom:40px;
+
+}
+
+.about-image{
+
+    position:relative;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    border-radius:30px;
+
+    border:1px solid var(--border);
+
+    transition:.4s;
+
+}
+
+.about-image:hover img{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+/*==================================================
+                STORY
+==================================================*/
+
+.story{
+
+    padding:120px 0;
+
+}
+
+.story-grid{
+
+    display:grid;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.story-image{
+
+    position:relative;
+
+}
+
+.story-image img{
+
+    width:100%;
+
+    border-radius:28px;
+
+    border:1px solid var(--border);
+
+}
+
+.story-content h2{
+
+    font-family:"Sora",sans-serif;
+
+    font-size:44px;
+
+    line-height:1.2;
+
+    margin:20px 0 26px;
+
+}
+
+.story-content p{
+
+    color:var(--text);
+
+    line-height:1.9;
+
+    margin-bottom:22px;
+
+}
+
+
+
+/*==================================================
+            COMPANY HIGHLIGHTS
+==================================================*/
+
+.company-highlights{
+
+    padding:120px 0;
+
+}
+
+.highlight-grid{
+
+    display:grid;
+
+    gap:24px;
+
+}
+
+.highlight-card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:28px;
+
+    padding:40px 32px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.highlight-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 25px 60px rgba(225,29,46,.12);
+
+}
+
+.highlight-card img{
+
+    width:58px;
+
+    margin:0 auto 24px;
+
+}
+
+.highlight-card h3{
+
+    font-family:"Sora",sans-serif;
+
+    font-size:24px;
+
+    margin-bottom:16px;
+
+}
+
+.highlight-card p{
+
+    color:var(--text);
+
+    line-height:1.8;
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(min-width:992px){
+
+    .about-hero-grid{
+
+        grid-template-columns:1.1fr .9fr;
+
+    }
+
+    .story-grid{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+
+@media(min-width:768px){
+
+    .highlight-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(min-width:1200px){
+
+    .highlight-grid{
+
+        grid-template-columns:repeat(4,1fr);
+
+    }
+
+}
+
+@media(max-width:991px){
+
+    .about-content h1{
+
+        font-size:42px;
+
+    }
+
+    .story-content h2{
+
+        font-size:36px;
+
+    }
+
+}
+/*==================================================
+            VISION & MISSION
+==================================================*/
+
+.vision-mission{
+
+    padding:120px 0;
+
+}
+
+.vision-grid{
+
+    display:grid;
+
+    gap:30px;
+
+}
+
+.vision-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:linear-gradient(180deg,#141414,#0B0B0B);
+
+    border:1px solid var(--border);
+
+    border-radius:30px;
+
+    padding:42px;
+
+    transition:var(--transition);
+
+}
+
+.vision-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+
+    height:220px;
+
+    top:-110px;
+
+    right:-110px;
+
+    background:rgba(225,29,46,.10);
+
+    border-radius:50%;
+
+    filter:blur(80px);
+
+}
+
+.vision-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 28px 70px rgba(225,29,46,.14);
+
+}
+
+.vision-icon{
+
+    width:82px;
+
+    height:82px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:22px;
+
+    background:rgba(225,29,46,.08);
+
+    border:1px solid rgba(225,29,46,.16);
+
+    margin-bottom:28px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.vision-icon img{
+
+    width:46px;
+
+}
+
+.vision-card h3{
+
+    position:relative;
+
+    z-index:2;
+
+    font-family:"Sora",sans-serif;
+
+    font-size:30px;
+
+    margin-bottom:18px;
+
+}
+
+.vision-card p{
+
+    position:relative;
+
+    z-index:2;
+
+    color:var(--text);
+
+    line-height:1.9;
+
+}
+
+
+
+/*==================================================
+                CORE VALUES
+==================================================*/
+
+.values{
+
+    padding:120px 0;
+
+}
+
+.values-grid{
+
+    display:grid;
+
+    gap:24px;
+
+}
+
+.value-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:26px;
+
+    padding:36px 32px;
+
+    transition:var(--transition);
+
+}
+
+.value-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:170px;
+
+    height:170px;
+
+    right:-90px;
+
+    bottom:-90px;
+
+    background:rgba(225,29,46,.08);
+
+    border-radius:50%;
+
+    filter:blur(70px);
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.value-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 25px 60px rgba(225,29,46,.12);
+
+}
+
+.value-card:hover::after{
+
+    opacity:1;
+
+}
+
+.value-card img{
+
+    width:58px;
+
+    margin-bottom:24px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.value-card h3{
+
+    position:relative;
+
+    z-index:2;
+
+    font-family:"Sora",sans-serif;
+
+    font-size:24px;
+
+    margin-bottom:16px;
+
+}
+
+.value-card p{
+
+    position:relative;
+
+    z-index:2;
+
+    color:var(--text);
+
+    line-height:1.8;
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(min-width:768px){
+
+    .vision-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .values-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(min-width:1200px){
+
+    .values-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+@media(max-width:991px){
+
+    .vision-card{
+
+        padding:34px;
+
+    }
+
+    .vision-card h3{
+
+        font-size:26px;
+
+    }
+
+}
+/*==================================================
+            WHY CHOOSE NOCTIS
+==================================================*/
+
+.about-why{
+
+    padding:120px 0;
+
+}
+
+.why-grid{
+
+    display:grid;
+
+    gap:24px;
+
+}
+
+.why-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:linear-gradient(180deg,#111111,#090909);
+
+    border:1px solid var(--border);
+
+    border-radius:28px;
+
+    padding:38px 34px;
+
+    transition:var(--transition);
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 28px 70px rgba(225,29,46,.14);
+
+}
+
+.why-card img{
+
+    width:58px;
+
+    margin-bottom:24px;
+
+}
+
+.why-card h3{
+
+    font-family:"Sora",sans-serif;
+
+    font-size:24px;
+
+    margin-bottom:16px;
+
+}
+
+.why-card p{
+
+    color:var(--text);
+
+    line-height:1.9;
+
+}
+
+
+
+/*==================================================
+                JOURNEY
+==================================================*/
+
+.journey{
+
+    padding:120px 0;
+
+}
+
+.timeline{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:34px;
+
+}
+
+.timeline-item{
+
+    display:flex;
+
+    gap:28px;
+
+    align-items:flex-start;
+
+}
+
+.timeline-icon{
+
+    width:72px;
+
+    height:72px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:var(--card);
+
+    border:2px solid var(--border);
+
+    flex-shrink:0;
+
+}
+
+.timeline-icon img{
+
+    width:34px;
+
+}
+
+.timeline-content{
+
+    flex:1;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:24px;
+
+    padding:30px;
+
+}
+
+.timeline-content span{
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+.timeline-content h3{
+
+    font-family:"Sora",sans-serif;
+
+    margin:16px 0;
+
+}
+
+.timeline-content p{
+
+    color:var(--text);
+
+    line-height:1.8;
+
+}
+
+
+
+/*==================================================
+            TECHNOLOGIES
+==================================================*/
+
+.about-tech{
+
+    padding:120px 0;
+
+}
+
+.tech-grid{
+
+    display:grid;
+
+    gap:24px;
+
+}
+
+.tech-card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:24px;
+
+    padding:36px;
+
+    text-align:center;
+
+    transition:var(--transition);
+
+}
+
+.tech-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+}
+
+.tech-card img{
+
+    width:56px;
+
+    margin-bottom:22px;
+
+}
+
+.tech-card h3{
+
+    font-family:"Sora",sans-serif;
+
+}
+
+
+
+/*==================================================
+                LEADERSHIP
+==================================================*/
+
+.leadership{
+
+    padding:120px 0;
+
+}
+
+.leader-card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+.leader-image img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.leader-content{
+
+    padding:40px;
+
+}
+
+.leader-content h3{
+
+    font-family:"Sora",sans-serif;
+
+    font-size:34px;
+
+    margin-bottom:12px;
+
+}
+
+.leader-content span{
+
+    display:block;
+
+    color:var(--primary);
+
+    margin-bottom:22px;
+
+}
+
+.leader-content p{
+
+    color:var(--text);
+
+    line-height:1.9;
+
+}
+
+.leader-social{
+
+    display:flex;
+
+    gap:16px;
+
+    margin-top:28px;
+
+}
+
+
+
+/*==================================================
+                    CTA
+==================================================*/
+
+.cta{
+
+    padding:120px 0;
+
+}
+
+.cta-box{
+
+    background:linear-gradient(180deg,#111,#090909);
+
+    border:1px solid var(--border);
+
+    border-radius:32px;
+
+    text-align:center;
+
+    padding:90px 40px;
+
+}
+
+.cta-box h2{
+
+    font-family:"Sora",sans-serif;
+
+    font-size:52px;
+
+    margin:22px 0;
+
+}
+
+.cta-box p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:var(--text);
+
+    line-height:1.9;
+
+}
+
+.cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    margin-top:36px;
+
+}
+
+
+
+/*==================================================
+                    FOOTER
+==================================================*/
+
+.footer{
+
+    border-top:1px solid var(--border);
+
+    padding:80px 0 30px;
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    gap:40px;
+
+}
+
+.footer h3{
+
+    font-family:"Sora",sans-serif;
+
+    margin-bottom:18px;
+
+}
+
+.footer p,
+
+.footer li{
+
+    color:var(--text);
+
+    line-height:1.8;
+
+    margin-bottom:12px;
+
+}
+
+.footer-bottom{
+
+    margin-top:50px;
+
+    padding-top:24px;
+
+    border-top:1px solid var(--border);
+
+    text-align:center;
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(min-width:768px){
+
+    .why-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .tech-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:2fr 1fr 1fr;
+
+    }
+
+}
+
+@media(min-width:992px){
+
+    .leader-card{
+
+        display:grid;
+
+        grid-template-columns:360px 1fr;
+
+    }
+
+}
+
+@media(min-width:1200px){
+
+    .why-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+@media(max-width:767px){
+
+    .timeline-item{
+
+        flex-direction:column;
+
+    }
+
+    .cta-box{
+
+        padding:70px 28px;
+
+    }
+
+    .cta-box h2{
+
+        font-size:38px;
+
+    }
+
+    .cta-buttons{
+
+        flex-direction:column;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<!--==========================================
+                HEADER
+===========================================-->
+
+<header class="header">
+
+<div class="container">
+
+<nav class="navbar">
+
+<a href="index.html"
+class="logo">
+
+<img src="logo.svg"
+alt="Noctis Technologies">
+
+</a>
+
+<ul class="nav-menu">
+
+<li>
+
+<a href="index.html">
+
+Home
+
+</a>
+
+</li>
+
+<li>
+
+<a href="about.html"
+class="active">
+
+About
+
+</a>
+
+</li>
+
+<li>
+
+<a href="services.html">
+
+Services
+
+</a>
+
+</li>
+
+<li>
+
+<a href="portfolio.html">
+
+Portfolio
+
+</a>
+
+</li>
+
+<li>
+
+<a href="team.html">
+
+Team
+
+</a>
+
+</li>
+
+<li>
+
+<a href="contact.html">
+
+Contact
+
+</a>
+
+</li>
+
+</ul>
+
+<div class="nav-right">
+
+<a href="contact.html"
+class="nav-btn">
+
+Start Project
+
+</a>
+
+<button class="menu-btn">
+
+<img src="menu.svg"
+alt="Menu">
+
+</button>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<!--==========================================
+            MOBILE MENU
+===========================================-->
+
+<div class="mobile-menu">
+
+<button class="close-btn">
+
+<img src="close.svg"
+alt="Close">
+
+</button>
+
+<a href="index.html">
+
+Home
+
+</a>
+
+<a href="about.html">
+
+About
+
+</a>
+
+<a href="services.html">
+
+Services
+
+</a>
+
+<a href="portfolio.html">
+
+Portfolio
+
+</a>
+
+<a href="team.html">
+
+Team
+
+</a>
+
+<a href="contact.html">
+
+Contact
+
+</a>
+
+<a href="contact.html"
+class="btn-primary mobile-btn">
+
+Start Project
+
+</a>
+
+</div>
+
+
+
+<main>
+
+
+
+<!--==========================================
+                ABOUT HERO
+===========================================-->
+
+<section class="about-hero">
+
+<div class="container">
+
+<div class="about-hero-grid">
+
+<div class="about-content">
+
+<span class="section-badge">
+
+ABOUT NOCTIS
+
+</span>
+
+<h1>
+
+Designing Exceptional
+Digital Experiences
+For Ambitious Businesses.
+
+</h1>
+
+<p>
+
+At Noctis Technologies, we combine
+creative thinking with technical
+expertise to design and develop
+modern websites that strengthen
+brands, improve online visibility
+and support long-term business
+growth.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="portfolio.html"
+class="btn-primary">
+
+View Portfolio
+
+</a>
+
+<a href="contact.html"
+class="btn-secondary">
+
+Get In Touch
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="about-image">
+
+<img src="about-hero.webp"
+alt="About Noctis Technologies">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!--==========================================
+                OUR STORY
+===========================================-->
+
+<section class="story">
+
+    <div class="container">
+
+        <div class="story-grid">
+
+            <div class="story-image">
+
+                <img src="story.webp"
+                     alt="Our Story">
+
+            </div>
+
+            <div class="story-content">
+
+                <span class="section-badge">
+
+                    OUR STORY
+
+                </span>
+
+                <h2>
+
+                    Built With Purpose.
+                    Driven By Innovation.
+
+                </h2>
+
+                <p>
+
+                    Noctis Technologies was established
+                    with a clear objective: to create
+                    premium digital experiences that
+                    combine exceptional design,
+                    reliable development and measurable
+                    business value.
+
+                </p>
+
+                <p>
+
+                    Every project begins by understanding
+                    the client's objectives before
+                    transforming ideas into elegant,
+                    responsive and high-performing
+                    digital solutions.
+
+                </p>
+
+                <p>
+
+                    We believe that every website should
+                    represent the quality of the business
+                    behind it. By combining creativity,
+                    technology and strategic thinking,
+                    we develop solutions that remain
+                    effective long after launch.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!--==========================================
+            COMPANY HIGHLIGHTS
+===========================================-->
+
+<section class="company-highlights">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-badge">
+
+                OUR STRENGTHS
+
+            </span>
+
+            <h2>
+
+                What Defines
+                Noctis Technologies
+
+            </h2>
+
+            <p>
+
+                Every project is built around
+                quality, performance and a
+                commitment to delivering lasting
+                value for our clients.
+
+            </p>
+
+        </div>
+
+        <div class="highlight-grid">
+
+            <article class="highlight-card">
+
+                <img src="innovation.svg"
+                     alt="Innovation">
+
+                <h3>
+
+                    Innovation
+
+                </h3>
+
+                <p>
+
+                    Modern thinking supported by
+                    practical and reliable digital
+                    solutions.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="highlight-card">
+
+                <img src="quality.svg"
+                     alt="Quality">
+
+                <h3>
+
+                    Quality
+
+                </h3>
+
+                <p>
+
+                    Every project is carefully
+                    developed with attention to
+                    detail and long-term reliability.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="highlight-card">
+
+                <img src="performance.svg"
+                     alt="Performance">
+
+                <h3>
+
+                    Performance
+
+                </h3>
+
+                <p>
+
+                    Fast, responsive and optimised
+                    websites designed for every
+                    modern device.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="highlight-card">
+
+                <img src="support.svg"
+                     alt="Support">
+
+                <h3>
+
+                    Ongoing Support
+
+                </h3>
+
+                <p>
+
+                    Continuing assistance and
+                    dependable guidance beyond
+                    project delivery.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+<!--==========================================
+            VISION & MISSION
+===========================================-->
+
+<section class="vision-mission">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-badge">
+
+                OUR PURPOSE
+
+            </span>
+
+            <h2>
+
+                Guided By Vision,
+                Driven By Purpose
+
+            </h2>
+
+            <p>
+
+                Our ambition is to deliver digital
+                solutions that combine innovation,
+                quality and long-term business value.
+
+            </p>
+
+        </div>
+
+        <div class="vision-grid">
+
+            <article class="vision-card">
+
+                <div class="vision-icon">
+
+                    <img src="vision.svg"
+                         alt="Vision">
+
+                </div>
+
+                <h3>
+
+                    Our Vision
+
+                </h3>
+
+                <p>
+
+                    To become a trusted digital
+                    partner recognised for creating
+                    exceptional websites and digital
+                    experiences that inspire growth
+                    and lasting success.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="vision-card">
+
+                <div class="vision-icon">
+
+                    <img src="mission.svg"
+                         alt="Mission">
+
+                </div>
+
+                <h3>
+
+                    Our Mission
+
+                </h3>
+
+                <p>
+
+                    To deliver reliable, elegant
+                    and performance-focused digital
+                    solutions through creativity,
+                    technical excellence and a
+                    client-centred approach.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!--==========================================
+                CORE VALUES
+===========================================-->
+
+<section class="values">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-badge">
+
+                OUR VALUES
+
+            </span>
+
+            <h2>
+
+                The Principles
+                That Define Our Work
+
+            </h2>
+
+            <p>
+
+                Every decision we make is guided
+                by values that encourage trust,
+                innovation and continuous
+                improvement.
+
+            </p>
+
+        </div>
+
+        <div class="values-grid">
+
+            <article class="value-card">
+
+                <img src="innovation.svg"
+                     alt="Innovation">
+
+                <h3>
+
+                    Innovation
+
+                </h3>
+
+                <p>
+
+                    Embracing new ideas and
+                    technologies to create
+                    meaningful digital solutions.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="value-card">
+
+                <img src="quality.svg"
+                     alt="Quality">
+
+                <h3>
+
+                    Quality
+
+                </h3>
+
+                <p>
+
+                    Maintaining exceptional
+                    standards throughout every
+                    stage of development.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="value-card">
+
+                <img src="transparency.svg"
+                     alt="Transparency">
+
+                <h3>
+
+                    Transparency
+
+                </h3>
+
+                <p>
+
+                    Building relationships through
+                    honesty, openness and clear
+                    communication.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="value-card">
+
+                <img src="performance.svg"
+                     alt="Performance">
+
+                <h3>
+
+                    Performance
+
+                </h3>
+
+                <p>
+
+                    Delivering fast, efficient and
+                    dependable digital experiences
+                    across every platform.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="value-card">
+
+                <img src="support.svg"
+                     alt="Support">
+
+                <h3>
+
+                    Support
+
+                </h3>
+
+                <p>
+
+                    Providing dependable assistance
+                    before, during and after every
+                    project is completed.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="value-card">
+
+                <img src="growth.svg"
+                     alt="Growth">
+
+                <h3>
+
+                    Growth
+
+                </h3>
+
+                <p>
+
+                    Helping businesses strengthen
+                    their digital presence and
+                    achieve sustainable success.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+<!--==========================================
+            WHY CHOOSE NOCTIS
+===========================================-->
+
+<section class="about-why">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-badge">
+
+                WHY NOCTIS
+
+            </span>
+
+            <h2>
+
+                Built Around
+                Your Success
+
+            </h2>
+
+            <p>
+
+                Every project is developed with a
+                commitment to quality, performance
+                and long-term reliability.
+
+            </p>
+
+        </div>
+
+        <div class="why-grid">
+
+            <article class="why-card">
+
+                <img src="code.svg"
+                     alt="Development">
+
+                <h3>
+
+                    Bespoke Development
+
+                </h3>
+
+                <p>
+
+                    Every website is carefully
+                    developed to reflect your
+                    business identity rather than
+                    relying on generic templates.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="why-card">
+
+                <img src="responsive.svg"
+                     alt="Responsive">
+
+                <h3>
+
+                    Responsive By Design
+
+                </h3>
+
+                <p>
+
+                    Optimised for desktops,
+                    tablets and smartphones to
+                    ensure an excellent user
+                    experience across every device.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="why-card">
+
+                <img src="speed.svg"
+                     alt="Performance">
+
+                <h3>
+
+                    Performance Focused
+
+                </h3>
+
+                <p>
+
+                    Built with clean code and
+                    modern practices to deliver
+                    speed, stability and
+                    accessibility.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="why-card">
+
+                <img src="security.svg"
+                     alt="Security">
+
+                <h3>
+
+                    Secure Development
+
+                </h3>
+
+                <p>
+
+                    Modern security practices are
+                    considered throughout every
+                    stage of development.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="why-card">
+
+                <img src="support.svg"
+                     alt="Support">
+
+                <h3>
+
+                    Ongoing Support
+
+                </h3>
+
+                <p>
+
+                    We remain available after
+                    launch to provide updates,
+                    improvements and technical
+                    assistance.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="why-card">
+
+                <img src="analytics.svg"
+                     alt="Analytics">
+
+                <h3>
+
+                    Measurable Results
+
+                </h3>
+
+                <p>
+
+                    We focus on creating digital
+                    experiences that contribute to
+                    meaningful business growth.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!--==========================================
+            OUR JOURNEY
+===========================================-->
+
+<section class="journey">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-badge">
+
+                OUR JOURNEY
+
+            </span>
+
+            <h2>
+
+                Every Step
+                Shapes Our Future
+
+            </h2>
+
+            <p>
+
+                Our journey reflects continuous
+                learning, innovation and a
+                commitment to delivering
+                exceptional digital solutions.
+
+            </p>
+
+        </div>
+
+        <div class="timeline">
+
+            <article class="timeline-item">
+
+                <div class="timeline-icon">
+
+                    <img src="rocket.svg"
+                         alt="Founded">
+
+                </div>
+
+                <div class="timeline-content">
+
+                    <span>
+
+                        2026
+
+                    </span>
+
+                    <h3>
+
+                        Noctis Technologies Founded
+
+                    </h3>
+
+                    <p>
+
+                        Established with a vision
+                        to create premium digital
+                        experiences for modern
+                        businesses.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="timeline-item">
+
+                <div class="timeline-icon">
+
+                    <img src="website.svg"
+                         alt="Projects">
+
+                </div>
+
+                <div class="timeline-content">
+
+                    <span>
+
+                        Today
+
+                    </span>
+
+                    <h3>
+
+                        Delivering Modern Solutions
+
+                    </h3>
+
+                    <p>
+
+                        Developing responsive
+                        websites, business
+                        platforms and digital
+                        solutions with a strong
+                        emphasis on quality.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="timeline-item">
+
+                <div class="timeline-icon">
+
+                    <img src="target.svg"
+                         alt="Future">
+
+                </div>
+
+                <div class="timeline-content">
+
+                    <span>
+
+                        Tomorrow
+
+                    </span>
+
+                    <h3>
+
+                        Looking Ahead
+
+                    </h3>
+
+                    <p>
+
+                        Continuing to invest in
+                        emerging technologies,
+                        automation and innovative
+                        digital experiences that
+                        support long-term client
+                        success.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+<!--==========================================
+            TECHNOLOGIES
+===========================================-->
+
+<section class="about-tech">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-badge">
+
+                OUR TECHNOLOGIES
+
+            </span>
+
+            <h2>
+
+                Built Using
+                Modern Technologies
+
+            </h2>
+
+            <p>
+
+                Every project is developed using
+                trusted technologies that deliver
+                performance, reliability and
+                long-term scalability.
+
+            </p>
+
+        </div>
+
+        <div class="tech-grid">
+
+            <article class="tech-card">
+
+                <img src="html.svg" alt="HTML5">
+
+                <h3>HTML5</h3>
+
+            </article>
+
+            <article class="tech-card">
+
+                <img src="css.svg" alt="CSS3">
+
+                <h3>CSS3</h3>
+
+            </article>
+
+            <article class="tech-card">
+
+                <img src="javascript.svg" alt="JavaScript">
+
+                <h3>JavaScript</h3>
+
+            </article>
+
+            <article class="tech-card">
+
+                <img src="wordpress.svg" alt="WordPress">
+
+                <h3>WordPress</h3>
+
+            </article>
+
+            <article class="tech-card">
+
+                <img src="github.svg" alt="GitHub">
+
+                <h3>GitHub</h3>
+
+            </article>
+
+            <article class="tech-card">
+
+                <img src="seo.svg" alt="SEO">
+
+                <h3>SEO</h3>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!--==========================================
+            LEADERSHIP
+===========================================-->
+
+<section class="leadership">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-badge">
+
+                LEADERSHIP
+
+            </span>
+
+            <h2>
+
+                Meet The Founder
+
+            </h2>
+
+            <p>
+
+                Noctis Technologies is driven by a
+                commitment to craftsmanship,
+                innovation and dependable client
+                relationships.
+
+            </p>
+
+        </div>
+
+        <div class="leadership-grid">
+
+            <article class="leader-card">
+
+                <div class="leader-image">
+
+                    <img src="team1.webp"
+                         alt="Sam Immanuel J">
+
+                </div>
+
+                <div class="leader-content">
+
+                    <h3>
+
+                        Sam Immanuel J
+
+                    </h3>
+
+                    <span>
+
+                        Founder & Web Developer
+
+                    </span>
+
+                    <p>
+
+                        Passionate about designing
+                        premium websites and digital
+                        experiences that combine
+                        elegant design with practical
+                        business value.
+
+                    </p>
+
+                    <div class="leader-social">
+
+                        <a href="#">
+
+                            <img src="linkedin.svg"
+                                 alt="LinkedIn">
+
+                        </a>
+
+                        <a href="#">
+
+                            <img src="github-social.svg"
+                                 alt="GitHub">
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!--==========================================
+            CALL TO ACTION
+===========================================-->
+
+<section class="cta">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <span class="section-badge">
+
+                LET'S WORK TOGETHER
+
+            </span>
+
+            <h2>
+
+                Ready To Begin
+                Your Next Project?
+
+            </h2>
+
+            <p>
+
+                Whether you require a business
+                website, an e-commerce platform
+                or a bespoke digital solution,
+                Noctis Technologies is ready to
+                help bring your vision to life.
+
+            </p>
+
+            <div class="cta-buttons">
+
+                <a href="contact.html"
+                   class="btn-primary">
+
+                    Start Your Project
+
+                </a>
+
+                <a href="portfolio.html"
+                   class="btn-secondary">
+
+                    Explore Our Work
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!--==========================================
+                FOOTER
+===========================================-->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-about">
+
+                <a href="index.html"
+                   class="footer-logo">
+
+                    <img src="logo.svg"
+                         alt="Noctis Technologies">
+
+                </a>
+
+                <p>
+
+                    Creating premium websites,
+                    digital experiences and
+                    scalable online solutions
+                    for ambitious businesses.
+
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Company</h3>
+
+                <ul>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="services.html">Services</a></li>
+
+                    <li><a href="portfolio.html">Portfolio</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-contact">
+
+                <h3>Contact</h3>
+
+                <ul>
+
+                    <li>
+
+                        <img src="mail.svg"
+                             alt="Email">
+
+                        hello@noctistechnologies.com
+
+                    </li>
+
+                    <li>
+
+                        <img src="phone.svg"
+                             alt="Phone">
+
+                        +91 XXXXX XXXXX
+
+                    </li>
+
+                    <li>
+
+                        <img src="location.svg"
+                             alt="Location">
+
+                        Tamil Nadu, India
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 Noctis Technologies.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</main>
+
+<script src="index.js"></script>
+
+</body>
+
+</html>

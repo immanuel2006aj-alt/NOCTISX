@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>404 • Page Not Found | Noctis Technologies</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* Paste 404 CSS Here */
+/*==================================================
+404 PAGE - NOCTIS TECHNOLOGIES
+==================================================*/
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#050505;
+color:#fff;
+overflow-x:hidden;
+}
+
+.container{
+width:min(1200px,92%);
+margin:auto;
+}
+
+/*==========================
+HEADER
+==========================*/
+
+.header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(5,5,5,.92);
+backdrop-filter:blur(20px);
+border-bottom:1px solid #1d1d1d;
+z-index:999;
+}
+
+.navbar{
+height:82px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo img{
+height:45px;
+}
+
+.btn-primary,
+.btn-secondary{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:15px 34px;
+border-radius:16px;
+text-decoration:none;
+font-weight:700;
+transition:.35s;
+}
+
+.btn-primary{
+background:#E11D2E;
+color:#fff;
+}
+
+.btn-primary:hover{
+transform:translateY(-4px);
+box-shadow:0 20px 45px rgba(225,29,46,.28);
+}
+
+.btn-secondary{
+border:1px solid #2c2c2c;
+color:#fff;
+}
+
+.btn-secondary:hover{
+border-color:#E11D2E;
+}
+
+/*==========================
+HERO
+==========================*/
+
+.error-hero{
+padding:170px 0 100px;
+min-height:100vh;
+display:flex;
+align-items:center;
+}
+
+.error-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+gap:80px;
+}
+
+.section-badge{
+display:inline-block;
+padding:10px 18px;
+border-radius:50px;
+background:rgba(225,29,46,.12);
+color:#E11D2E;
+font-size:13px;
+font-weight:700;
+margin-bottom:20px;
+}
+
+.error-content h1{
+font-family:"Sora",sans-serif;
+font-size:68px;
+line-height:1.05;
+margin-bottom:24px;
+}
+
+.error-content p{
+font-size:18px;
+line-height:1.9;
+color:#b8b8b8;
+margin-bottom:35px;
+}
+
+.hero-buttons{
+display:flex;
+gap:18px;
+flex-wrap:wrap;
+}
+
+/*==========================
+DEVELOPER SCENE
+==========================*/
+
+.developer-scene{
+position:relative;
+width:500px;
+height:500px;
+margin:auto;
+}
+
+/* Glow */
+
+.developer-scene::before{
+content:"";
+position:absolute;
+width:320px;
+height:320px;
+background:rgba(225,29,46,.12);
+border-radius:50%;
+left:90px;
+top:70px;
+filter:blur(100px);
+}
+
+/* Desk */
+
+.desk{
+position:absolute;
+bottom:90px;
+left:40px;
+width:420px;
+height:16px;
+background:#222;
+border-radius:20px;
+}
+
+.desk::before,
+.desk::after{
+content:"";
+position:absolute;
+width:10px;
+height:140px;
+background:#222;
+top:16px;
+}
+
+.desk::before{
+left:25px;
+}
+
+.desk::after{
+right:25px;
+}
+
+/* Monitor */
+
+.monitor{
+position:absolute;
+left:80px;
+bottom:105px;
+}
+
+.screen{
+width:180px;
+height:120px;
+background:#0c0c0c;
+border:8px solid #2d2d2d;
+border-radius:16px;
+position:relative;
+overflow:hidden;
+}
+
+.monitor-stand{
+width:18px;
+height:45px;
+background:#2d2d2d;
+margin:auto;
+}
+
+.monitor-stand::after{
+content:"";
+display:block;
+width:80px;
+height:8px;
+background:#2d2d2d;
+margin-left:-31px;
+border-radius:10px;
+}
+
+/* Code */
+
+.code-line{
+height:7px;
+background:#E11D2E;
+border-radius:30px;
+margin:16px;
+animation:blink 2s infinite;
+}
+
+.line1{width:110px;}
+.line2{width:140px;}
+.line3{width:80px;}
+.line4{width:130px;}
+
+.cursor{
+position:absolute;
+width:3px;
+height:20px;
+background:#fff;
+right:28px;
+bottom:20px;
+animation:cursor 1s infinite;
+}
+
+/* Keyboard */
+
+.keyboard{
+position:absolute;
+left:95px;
+bottom:92px;
+width:150px;
+height:16px;
+background:#222;
+border-radius:8px;
+}
+
+.mouse{
+position:absolute;
+left:260px;
+bottom:94px;
+width:25px;
+height:16px;
+background:#222;
+border-radius:20px;
+}
+
+/* Coffee */
+
+.coffee{
+position:absolute;
+right:70px;
+bottom:95px;
+width:34px;
+height:42px;
+background:#2b2b2b;
+border-radius:0 0 10px 10px;
+}
+
+.steam{
+position:absolute;
+width:3px;
+height:20px;
+background:rgba(255,255,255,.35);
+border-radius:30px;
+animation:steam 3s infinite;
+}
+
+.steam1{left:8px;top:-18px;}
+.steam2{left:16px;top:-22px;animation-delay:.5s;}
+.steam3{left:24px;top:-18px;animation-delay:1s;}
+
+/* Developer */
+
+.developer{
+position:absolute;
+right:95px;
+bottom:104px;
+width:120px;
+height:220px;
+animation:breathe 4s infinite;
+}
+
+.head{
+width:62px;
+height:62px;
+background:#F3C59C;
+border-radius:50%;
+margin:auto;
+position:relative;
+}
+
+.hair{
+position:absolute;
+top:0;
+left:3px;
+width:56px;
+height:26px;
+background:#171717;
+border-radius:40px 40px 12px 12px;
+}
+
+.eye{
+position:absolute;
+width:5px;
+height:5px;
+background:#222;
+border-radius:50%;
+top:28px;
+}
+
+.left-eye{left:17px;}
+.right-eye{right:17px;}
+
+.mouth{
+position:absolute;
+width:15px;
+height:3px;
+background:#9a4f4f;
+bottom:14px;
+left:24px;
+border-radius:20px;
+}
+
+.neck{
+width:16px;
+height:14px;
+background:#e5b68b;
+margin:auto;
+}
+
+.body{
+width:82px;
+height:95px;
+background:#E11D2E;
+border-radius:22px;
+margin:auto;
+}
+
+/* Floating 404 */
+
+.floating-404{
+position:absolute;
+top:30px;
+right:30px;
+font-size:90px;
+font-weight:800;
+font-family:"Sora",sans-serif;
+color:rgba(225,29,46,.18);
+animation:float 4s ease-in-out infinite;
+}
+
+/* Gear */
+
+.gear{
+position:absolute;
+border:5px solid #E11D2E;
+border-radius:50%;
+animation:rotate 10s linear infinite;
+}
+
+.gear-one{
+width:55px;
+height:55px;
+top:40px;
+left:40px;
+}
+
+.gear-two{
+width:38px;
+height:38px;
+bottom:40px;
+right:20px;
+}
+
+/* Bulb */
+
+.idea-bulb{
+position:absolute;
+top:30px;
+left:230px;
+width:26px;
+height:40px;
+background:#ffd34d;
+border-radius:50%;
+box-shadow:0 0 30px rgba(255,211,77,.5);
+animation:float 3s infinite;
+}
+
+.idea-bulb::after{
+content:"";
+position:absolute;
+bottom:-8px;
+left:7px;
+width:12px;
+height:10px;
+background:#888;
+border-radius:3px;
+}
+
+/*==========================
+ANIMATIONS
+==========================*/
+
+@keyframes float{
+
+50%{
+transform:translateY(-12px);
+}
+
+}
+
+@keyframes breathe{
+
+50%{
+transform:translateY(-5px);
+}
+
+}
+
+@keyframes rotate{
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+@keyframes cursor{
+
+50%{
+opacity:0;
+}
+
+}
+
+@keyframes blink{
+
+50%{
+opacity:.4;
+}
+
+}
+
+@keyframes steam{
+
+50%{
+transform:translateY(-12px);
+opacity:.2;
+}
+
+100%{
+opacity:0;
+}
+
+}
+
+/*==========================
+RESPONSIVE
+==========================*/
+
+@media(max-width:992px){
+
+.error-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.developer-scene{
+
+transform:scale(.9);
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.error-content h1{
+
+font-size:46px;
+
+}
+
+.developer-scene{
+
+transform:scale(.72);
+
+margin-top:-40px;
+
+}
+
+}
+/* ==========================================
+   MOBILE FIRST (Default)
+   320px - 767px
+========================================== */
+
+/* Write your base CSS here */
+/*==========================================
+        MOBILE (320px - 767px)
+==========================================*/
+
+@media (max-width:767px){
+
+.header{
+
+padding:0 18px;
+
+}
+
+.navbar{
+
+height:70px;
+
+}
+
+.logo img{
+
+height:36px;
+
+}
+
+.btn-primary,
+.btn-secondary{
+
+width:100%;
+
+padding:15px;
+
+font-size:15px;
+
+}
+
+.error-hero{
+
+padding:120px 0 70px;
+
+min-height:auto;
+
+}
+
+.error-grid{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+text-align:center;
+
+gap:40px;
+
+}
+
+.error-content{
+
+order:2;
+
+}
+
+.developer-scene{
+
+order:1;
+
+width:320px;
+
+height:320px;
+
+transform:scale(.72);
+
+margin:0 auto;
+
+}
+
+.error-content h1{
+
+font-size:42px;
+
+line-height:1.15;
+
+margin-bottom:18px;
+
+}
+
+.error-content p{
+
+font-size:15px;
+
+line-height:1.8;
+
+margin-bottom:28px;
+
+padding:0 8px;
+
+}
+
+.section-badge{
+
+font-size:12px;
+
+padding:8px 16px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+flex-direction:column;
+
+gap:14px;
+
+width:100%;
+
+}
+
+.floating-404{
+
+font-size:58px;
+
+top:10px;
+
+right:10px;
+
+}
+
+.monitor{
+
+transform:scale(.82);
+
+}
+
+.developer{
+
+transform:scale(.82);
+
+}
+
+.idea-bulb{
+
+transform:scale(.8);
+
+}
+
+.gear-one{
+
+transform:scale(.75);
+
+}
+
+.gear-two{
+
+transform:scale(.75);
+
+}
+
+.keyboard{
+
+width:120px;
+
+}
+
+.mouse{
+
+display:none;
+
+}
+
+.coffee{
+
+display:none;
+
+}
+
+}
+
+
+/* ==========================================
+   SMALL TABLETS
+   768px+
+========================================== */
+
+@media (min-width:768px){
+
+.container{
+max-width:720px;
+margin:auto;
+}
+
+.error-grid{
+display:grid;
+grid-template-columns:1fr;
+gap:50px;
+}
+
+.developer-scene{
+transform:scale(.9);
+}
+
+}
+
+
+/* ==========================================
+   TABLETS
+   992px+
+========================================== */
+
+@media (min-width:992px){
+
+.container{
+max-width:960px;
+}
+
+.error-grid{
+grid-template-columns:1fr 1fr;
+align-items:center;
+gap:70px;
+}
+
+.error-content{
+text-align:left;
+}
+
+.hero-buttons{
+justify-content:flex-start;
+}
+
+.developer-scene{
+transform:scale(1);
+}
+
+}
+
+
+/* ==========================================
+   LAPTOP
+   1200px+
+========================================== */
+
+@media (min-width:1200px){
+
+.container{
+max-width:1180px;
+}
+
+.error-content h1{
+font-size:68px;
+}
+
+.developer-scene{
+width:560px;
+height:560px;
+}
+
+}
+
+
+/* ==========================================
+   LARGE DESKTOP
+   1440px+
+========================================== */
+
+@media (min-width:1440px){
+
+.container{
+max-width:1320px;
+}
+
+.error-content h1{
+font-size:76px;
+}
+
+.developer-scene{
+transform:scale(1.1);
+}
+
+}
+
+
+/* ==========================================
+   ULTRA WIDE
+   1920px+
+========================================== */
+
+@media (min-width:1920px){
+
+.container{
+max-width:1500px;
+}
+
+.developer-scene{
+transform:scale(1.2);
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="container">
+
+<nav class="navbar">
+
+<a href="index.html" class="logo">
+
+<img src="logo.svg" alt="Noctis">
+
+</a>
+
+<a href="index.html" class="btn-primary">
+
+Back Home
+
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<main>
+
+<section class="error-hero">
+
+<div class="container">
+
+<div class="error-grid">
+
+<!--=========================
+LEFT CONTENT
+==========================-->
+
+<div class="error-content">
+
+<span class="section-badge">
+
+ERROR 404
+
+</span>
+
+<h1>
+
+Oops!
+
+Page Not Found
+
+</h1>
+
+<p>
+
+The page you are looking for may have been moved,
+deleted or the URL may be incorrect.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="index.html"
+
+class="btn-primary">
+
+Go Home
+
+</a>
+
+<a href="contact.html"
+
+class="btn-secondary">
+
+Contact Us
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<!--=========================
+RIGHT ILLUSTRATION
+==========================-->
+
+<div class="developer-scene">
+
+<div class="desk"></div>
+
+<div class="monitor">
+
+<div class="screen">
+
+<div class="code-line line1"></div>
+
+<div class="code-line line2"></div>
+
+<div class="code-line line3"></div>
+
+<div class="code-line line4"></div>
+
+<div class="cursor"></div>
+
+</div>
+
+<div class="monitor-stand"></div>
+
+</div>
+
+<div class="keyboard"></div>
+
+<div class="mouse"></div>
+
+<div class="coffee">
+
+<div class="steam steam1"></div>
+
+<div class="steam steam2"></div>
+
+<div class="steam steam3"></div>
+
+</div>
+
+<div class="developer">
+
+<div class="head">
+
+<div class="hair"></div>
+
+<div class="eye left-eye"></div>
+
+<div class="eye right-eye"></div>
+
+<div class="mouth"></div>
+
+</div>
+
+<div class="neck"></div>
+
+<div class="body"></div>
+
+<div class="left-arm"></div>
+
+<div class="right-arm"></div>
+
+<div class="left-leg"></div>
+
+<div class="right-leg"></div>
+
+</div>
+
+<div class="chair">
+
+<div class="chair-back"></div>
+
+<div class="chair-seat"></div>
+
+</div>
+
+<div class="floating-404">
+
+404
+
+</div>
+
+<div class="gear gear-one"></div>
+
+<div class="gear gear-two"></div>
+
+<div class="idea-bulb"></div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+</body>
+
+</html>

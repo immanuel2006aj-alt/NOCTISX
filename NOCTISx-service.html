@@ -1,0 +1,3161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+
+Services • Noctis Technologies
+
+</title>
+
+<meta name="description"
+content="Discover premium website development, e-commerce, SEO and digital solutions delivered by Noctis Technologies.">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<style>
+
+/* Services CSS */
+/*==================================================
+                    RESET
+==================================================*/
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+}
+
+:root{
+
+--primary:#E11D2E;
+
+--background:#050505;
+
+--card:#111111;
+
+--card2:#181818;
+
+--white:#FFFFFF;
+
+--text:#B6B6B6;
+
+--border:#262626;
+
+--radius:28px;
+
+--transition:.35s ease;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+font-family:"Inter",sans-serif;
+
+background:var(--background);
+
+color:var(--white);
+
+line-height:1.7;
+
+overflow-x:hidden;
+
+}
+
+img{
+
+display:block;
+
+max-width:100%;
+
+}
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+ul{
+
+list-style:none;
+
+}
+
+.container{
+
+width:min(1180px,92%);
+
+margin:auto;
+
+}
+
+section{
+
+padding:110px 0;
+
+}
+
+
+
+/*==================================================
+                SECTION TITLE
+==================================================*/
+
+.section-badge{
+
+display:inline-flex;
+
+align-items:center;
+
+padding:10px 18px;
+
+border-radius:100px;
+
+background:rgba(225,29,46,.12);
+
+border:1px solid rgba(225,29,46,.20);
+
+font-size:13px;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+color:var(--primary);
+
+margin-bottom:20px;
+
+}
+
+.section-header{
+
+max-width:760px;
+
+margin:0 auto 70px;
+
+text-align:center;
+
+}
+
+.section-header h2{
+
+font-family:"Sora",sans-serif;
+
+font-size:48px;
+
+line-height:1.15;
+
+margin:20px 0;
+
+}
+
+.section-header p{
+
+color:var(--text);
+
+font-size:17px;
+
+line-height:1.9;
+
+}
+
+
+
+/*==================================================
+                    HEADER
+==================================================*/
+
+.header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+z-index:1000;
+
+background:rgba(5,5,5,.92);
+
+backdrop-filter:blur(18px);
+
+border-bottom:1px solid var(--border);
+
+}
+
+.navbar{
+
+height:82px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+}
+
+.logo img{
+
+height:44px;
+
+}
+
+.nav-menu{
+
+display:flex;
+
+gap:36px;
+
+align-items:center;
+
+}
+
+.nav-menu a{
+
+font-size:15px;
+
+font-weight:500;
+
+color:#D7D7D7;
+
+transition:var(--transition);
+
+}
+
+.nav-menu a:hover,
+
+.nav-menu a.active{
+
+color:var(--primary);
+
+}
+
+.nav-right{
+
+display:flex;
+
+align-items:center;
+
+gap:18px;
+
+}
+
+
+
+/*==================================================
+                    BUTTONS
+==================================================*/
+
+.btn-primary{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:16px 34px;
+
+border-radius:16px;
+
+background:var(--primary);
+
+color:#fff;
+
+font-weight:700;
+
+transition:var(--transition);
+
+}
+
+.btn-primary:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 18px 40px rgba(225,29,46,.28);
+
+}
+
+.btn-secondary{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:16px 34px;
+
+border-radius:16px;
+
+border:1px solid var(--border);
+
+color:#fff;
+
+transition:var(--transition);
+
+}
+
+.btn-secondary:hover{
+
+border-color:var(--primary);
+
+background:#111;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:18px;
+
+}
+
+
+
+/*==================================================
+                MOBILE MENU
+==================================================*/
+
+.menu-btn{
+
+display:none;
+
+width:48px;
+
+height:48px;
+
+border:none;
+
+background:#111;
+
+border-radius:14px;
+
+cursor:pointer;
+
+}
+
+.menu-btn img{
+
+width:24px;
+
+margin:auto;
+
+}
+
+.mobile-menu{
+
+position:fixed;
+
+top:0;
+
+right:-100%;
+
+width:300px;
+
+height:100vh;
+
+background:#090909;
+
+padding:100px 35px;
+
+border-left:1px solid var(--border);
+
+transition:.4s;
+
+z-index:1200;
+
+}
+
+.mobile-menu.active{
+
+right:0;
+
+}
+
+.mobile-menu a{
+
+display:block;
+
+margin-bottom:22px;
+
+font-size:18px;
+
+}
+
+.close-btn{
+
+position:absolute;
+
+top:25px;
+
+right:25px;
+
+width:48px;
+
+height:48px;
+
+border:none;
+
+border-radius:14px;
+
+background:#111;
+
+cursor:pointer;
+
+}
+
+
+
+/*==================================================
+                SERVICES HERO
+==================================================*/
+
+.services-hero{
+
+padding:170px 0 120px;
+
+overflow:hidden;
+
+position:relative;
+
+}
+
+.services-hero::before{
+
+content:"";
+
+position:absolute;
+
+width:420px;
+
+height:420px;
+
+top:-120px;
+
+right:-120px;
+
+background:rgba(225,29,46,.12);
+
+border-radius:50%;
+
+filter:blur(120px);
+
+}
+
+.services-grid{
+
+display:grid;
+
+gap:70px;
+
+align-items:center;
+
+}
+
+.services-content{
+
+position:relative;
+
+z-index:2;
+
+}
+
+.services-content h1{
+
+font-family:"Sora",sans-serif;
+
+font-size:58px;
+
+line-height:1.1;
+
+margin:24px 0;
+
+}
+
+.services-content p{
+
+max-width:620px;
+
+font-size:17px;
+
+color:var(--text);
+
+line-height:1.9;
+
+margin-bottom:38px;
+
+}
+
+.services-image img{
+
+width:100%;
+
+border-radius:30px;
+
+border:1px solid var(--border);
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(min-width:992px){
+
+.services-grid{
+
+grid-template-columns:1.1fr .9fr;
+
+}
+
+}
+
+@media(max-width:991px){
+
+.nav-menu{
+
+display:none;
+
+}
+
+.menu-btn{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+.services-content h1{
+
+font-size:42px;
+
+}
+
+}
+/*==================================================
+                SERVICES
+==================================================*/
+
+.services{
+
+    padding:120px 0;
+
+}
+
+.services-cards{
+
+    display:grid;
+
+    gap:26px;
+
+}
+
+
+
+/*==================================================
+                SERVICE CARD
+==================================================*/
+
+.service-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:linear-gradient(180deg,#141414,#0B0B0B);
+
+    border:1px solid var(--border);
+
+    border-radius:30px;
+
+    padding:38px;
+
+    transition:var(--transition);
+
+}
+
+.service-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+
+    height:220px;
+
+    right:-110px;
+
+    top:-110px;
+
+    background:rgba(225,29,46,.08);
+
+    border-radius:50%;
+
+    filter:blur(90px);
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 28px 70px rgba(225,29,46,.14);
+
+}
+
+.service-card:hover::before{
+
+    opacity:1;
+
+}
+
+
+
+/*==================================================
+                ICON
+==================================================*/
+
+.service-icon{
+
+    width:78px;
+
+    height:78px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(225,29,46,.08);
+
+    border:1px solid rgba(225,29,46,.18);
+
+    border-radius:20px;
+
+    margin-bottom:26px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.service-icon img{
+
+    width:42px;
+
+}
+
+
+
+/*==================================================
+                CONTENT
+==================================================*/
+
+.service-card h3{
+
+    position:relative;
+
+    z-index:2;
+
+    font-family:"Sora",sans-serif;
+
+    font-size:28px;
+
+    margin-bottom:18px;
+
+}
+
+.service-card p{
+
+    position:relative;
+
+    z-index:2;
+
+    color:var(--text);
+
+    line-height:1.9;
+
+    margin-bottom:28px;
+
+}
+
+
+
+/*==================================================
+                LIST
+==================================================*/
+
+.service-card ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.service-card li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#D8D8D8;
+
+    font-size:15px;
+
+}
+
+.service-card li::before{
+
+    content:"✓";
+
+    width:22px;
+
+    height:22px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(225,29,46,.12);
+
+    color:var(--primary);
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+
+
+/*==================================================
+            RESPONSIVE
+==================================================*/
+
+@media(min-width:768px){
+
+    .services-cards{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(min-width:1200px){
+
+    .services-cards{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+@media(max-width:767px){
+
+    .service-card{
+
+        padding:32px 26px;
+
+    }
+
+    .service-card h3{
+
+        font-size:24px;
+
+    }
+
+}
+/*==================================================
+            SERVICE DETAILS
+==================================================*/
+
+.service-details{
+
+    padding:120px 0;
+
+}
+
+.detail-row{
+
+    display:grid;
+
+    gap:70px;
+
+    align-items:center;
+
+    margin-bottom:120px;
+
+}
+
+.detail-row:last-child{
+
+    margin-bottom:0;
+
+}
+
+.detail-row.reverse .detail-image{
+
+    order:2;
+
+}
+
+.detail-row.reverse .detail-content{
+
+    order:1;
+
+}
+
+
+
+/*==================================================
+                IMAGE
+==================================================*/
+
+.detail-image{
+
+    position:relative;
+
+}
+
+.detail-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-20px;
+
+    background:rgba(225,29,46,.08);
+
+    filter:blur(80px);
+
+    border-radius:34px;
+
+    z-index:-1;
+
+}
+
+.detail-image img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:30px;
+
+    border:1px solid var(--border);
+
+    transition:var(--transition);
+
+}
+
+.detail-image:hover img{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+/*==================================================
+                CONTENT
+==================================================*/
+
+.detail-content h2{
+
+    font-family:"Sora",sans-serif;
+
+    font-size:44px;
+
+    line-height:1.15;
+
+    margin:22px 0;
+
+}
+
+.detail-content p{
+
+    color:var(--text);
+
+    line-height:1.9;
+
+    margin-bottom:34px;
+
+}
+
+
+
+/*==================================================
+            FEATURE LIST
+==================================================*/
+
+.feature-list{
+
+    display:grid;
+
+    gap:18px;
+
+}
+
+.feature-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    padding:18px 22px;
+
+    transition:var(--transition);
+
+}
+
+.feature-item:hover{
+
+    border-color:var(--primary);
+
+    transform:translateX(6px);
+
+}
+
+.feature-item img{
+
+    width:32px;
+
+    flex-shrink:0;
+
+}
+
+.feature-item span{
+
+    font-size:15px;
+
+    font-weight:500;
+
+    color:#E5E5E5;
+
+}
+
+
+
+/*==================================================
+            RESPONSIVE
+==================================================*/
+
+@media(min-width:992px){
+
+    .detail-row{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+
+@media(max-width:991px){
+
+    .detail-row.reverse .detail-image,
+
+    .detail-row.reverse .detail-content{
+
+        order:unset;
+
+    }
+
+    .detail-content h2{
+
+        font-size:36px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .detail-row{
+
+        gap:40px;
+
+        margin-bottom:90px;
+
+    }
+
+    .detail-content h2{
+
+        font-size:30px;
+
+    }
+
+    .feature-item{
+
+        padding:16px 18px;
+
+    }
+
+}
+/*==================================================
+            DEVELOPMENT PROCESS
+==================================================*/
+
+.process{
+
+    padding:120px 0;
+
+}
+
+.process-grid{
+
+    display:grid;
+
+    gap:24px;
+
+}
+
+.process-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:linear-gradient(180deg,#131313,#090909);
+
+    border:1px solid var(--border);
+
+    border-radius:28px;
+
+    padding:42px 34px;
+
+    transition:var(--transition);
+
+}
+
+.process-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 28px 70px rgba(225,29,46,.14);
+
+}
+
+.process-number{
+
+    position:absolute;
+
+    top:22px;
+
+    right:22px;
+
+    font-family:"Sora",sans-serif;
+
+    font-size:54px;
+
+    font-weight:800;
+
+    color:rgba(225,29,46,.08);
+
+    user-select:none;
+
+}
+
+.process-card img{
+
+    width:58px;
+
+    margin-bottom:26px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.process-card h3{
+
+    position:relative;
+
+    z-index:2;
+
+    font-family:"Sora",sans-serif;
+
+    font-size:28px;
+
+    margin-bottom:18px;
+
+}
+
+.process-card p{
+
+    position:relative;
+
+    z-index:2;
+
+    color:var(--text);
+
+    line-height:1.9;
+
+}
+
+
+
+/*==================================================
+            SERVICE BENEFITS
+==================================================*/
+
+.service-benefits{
+
+    padding:120px 0;
+
+}
+
+.benefits-grid{
+
+    display:grid;
+
+    gap:24px;
+
+}
+
+.benefit-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:28px;
+
+    padding:36px 32px;
+
+    transition:var(--transition);
+
+}
+
+.benefit-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    top:-90px;
+
+    right:-90px;
+
+    border-radius:50%;
+
+    background:rgba(225,29,46,.08);
+
+    filter:blur(80px);
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.benefit-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 25px 60px rgba(225,29,46,.14);
+
+}
+
+.benefit-card:hover::before{
+
+    opacity:1;
+
+}
+
+.benefit-card img{
+
+    width:56px;
+
+    margin-bottom:24px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.benefit-card h3{
+
+    position:relative;
+
+    z-index:2;
+
+    font-family:"Sora",sans-serif;
+
+    font-size:24px;
+
+    margin-bottom:16px;
+
+}
+
+.benefit-card p{
+
+    position:relative;
+
+    z-index:2;
+
+    color:var(--text);
+
+    line-height:1.8;
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(min-width:768px){
+
+    .process-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .benefits-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(min-width:1200px){
+
+    .process-grid{
+
+        grid-template-columns:repeat(4,1fr);
+
+    }
+
+    .benefits-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+@media(max-width:767px){
+
+    .process-card,
+
+    .benefit-card{
+
+        padding:30px 24px;
+
+    }
+
+    .process-number{
+
+        font-size:42px;
+
+    }
+
+    .process-card h3,
+
+    .benefit-card h3{
+
+        font-size:22px;
+
+    }
+
+}
+/*==================================================
+                    FAQ
+==================================================*/
+
+.faq{
+
+    padding:120px 0;
+
+}
+
+.faq-list{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.faq-item{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:24px;
+
+    margin-bottom:20px;
+
+    overflow:hidden;
+
+    transition:var(--transition);
+
+}
+
+.faq-item:hover{
+
+    border-color:var(--primary);
+
+}
+
+.faq-question{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:28px 32px;
+
+    background:none;
+
+    border:none;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    text-align:left;
+
+    font-family:"Sora",sans-serif;
+
+    font-size:20px;
+
+}
+
+.faq-question img{
+
+    width:24px;
+
+    transition:.35s;
+
+}
+
+.faq-answer{
+
+    padding:0 32px 28px;
+
+}
+
+.faq-answer p{
+
+    color:var(--text);
+
+    line-height:1.9;
+
+}
+
+
+
+/*==================================================
+                    CTA
+==================================================*/
+
+.cta{
+
+    padding:120px 0;
+
+}
+
+.cta-box{
+
+    position:relative;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    background:linear-gradient(180deg,#141414,#090909);
+
+    border:1px solid var(--border);
+
+    border-radius:32px;
+
+    padding:90px 50px;
+
+}
+
+.cta-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    top:-180px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    background:rgba(225,29,46,.12);
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+}
+
+.cta-box>*{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.cta-box h2{
+
+    font-family:"Sora",sans-serif;
+
+    font-size:52px;
+
+    margin:22px 0;
+
+}
+
+.cta-box p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:var(--text);
+
+    line-height:1.9;
+
+}
+
+.cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    margin-top:40px;
+
+}
+
+
+
+/*==================================================
+                    FOOTER
+==================================================*/
+
+.footer{
+
+    border-top:1px solid var(--border);
+
+    padding:80px 0 30px;
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    gap:40px;
+
+}
+
+.footer-about img{
+
+    height:46px;
+
+    margin-bottom:24px;
+
+}
+
+.footer h3{
+
+    font-family:"Sora",sans-serif;
+
+    margin-bottom:20px;
+
+}
+
+.footer p,
+
+.footer li{
+
+    color:var(--text);
+
+    line-height:1.9;
+
+    margin-bottom:12px;
+
+}
+
+.footer-links a{
+
+    transition:var(--transition);
+
+}
+
+.footer-links a:hover{
+
+    color:var(--primary);
+
+}
+
+.footer-bottom{
+
+    margin-top:60px;
+
+    padding-top:24px;
+
+    border-top:1px solid var(--border);
+
+    text-align:center;
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(min-width:768px){
+
+    .footer-grid{
+
+        grid-template-columns:2fr 1fr 1fr;
+
+    }
+
+}
+
+@media(max-width:991px){
+
+    .cta-box{
+
+        padding:70px 30px;
+
+    }
+
+    .cta-box h2{
+
+        font-size:40px;
+
+    }
+
+}
+
+@media(max-width:767px){
+
+    .faq-question{
+
+        font-size:18px;
+
+        padding:24px;
+
+    }
+
+    .faq-answer{
+
+        padding:0 24px 24px;
+
+    }
+
+    .cta-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .cta-box h2{
+
+        font-size:32px;
+
+    }
+
+    .section-header h2{
+
+        font-size:34px;
+
+    }
+
+    .footer{
+
+        padding-top:60px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<!--==========================================
+                HEADER
+===========================================-->
+
+<header class="header">
+
+<div class="container">
+
+<nav class="navbar">
+
+<a href="index.html"
+class="logo">
+
+<img src="logo.svg"
+alt="Noctis Technologies">
+
+</a>
+
+<ul class="nav-menu">
+
+<li>
+
+<a href="index.html">
+
+Home
+
+</a>
+
+</li>
+
+<li>
+
+<a href="about.html">
+
+About
+
+</a>
+
+</li>
+
+<li>
+
+<a href="services.html"
+class="active">
+
+Services
+
+</a>
+
+</li>
+
+<li>
+
+<a href="portfolio.html">
+
+Portfolio
+
+</a>
+
+</li>
+
+<li>
+
+<a href="team.html">
+
+Team
+
+</a>
+
+</li>
+
+<li>
+
+<a href="contact.html">
+
+Contact
+
+</a>
+
+</li>
+
+</ul>
+
+<div class="nav-right">
+
+<a href="contact.html"
+class="btn-primary">
+
+Start Project
+
+</a>
+
+<button class="menu-btn">
+
+<img src="menu.svg"
+alt="Menu">
+
+</button>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<!--==========================================
+            MOBILE MENU
+===========================================-->
+
+<div class="mobile-menu">
+
+<button class="close-btn">
+
+<img src="close.svg"
+alt="Close">
+
+</button>
+
+<a href="index.html">
+
+Home
+
+</a>
+
+<a href="about.html">
+
+About
+
+</a>
+
+<a href="services.html">
+
+Services
+
+</a>
+
+<a href="portfolio.html">
+
+Portfolio
+
+</a>
+
+<a href="team.html">
+
+Team
+
+</a>
+
+<a href="contact.html">
+
+Contact
+
+</a>
+
+<a href="contact.html"
+class="btn-primary mobile-btn">
+
+Start Project
+
+</a>
+
+</div>
+
+
+
+<main>
+
+
+
+<!--==========================================
+            SERVICES HERO
+===========================================-->
+
+<section class="services-hero">
+
+<div class="container">
+
+<div class="services-grid">
+
+<div class="services-content">
+
+<span class="section-badge">
+
+OUR SERVICES
+
+</span>
+
+<h1>
+
+Digital Solutions
+Designed To Help
+Your Business Grow.
+
+</h1>
+
+<p>
+
+Noctis Technologies delivers premium
+website development, e-commerce
+solutions and digital services designed
+to strengthen your online presence,
+improve customer engagement and
+support sustainable business growth.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#services"
+class="btn-primary">
+
+Explore Services
+
+</a>
+
+<a href="contact.html"
+class="btn-secondary">
+
+Request A Quote
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="services-image">
+
+<img src="services-hero.webp"
+alt="Noctis Services">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!--==========================================
+                OUR SERVICES
+===========================================-->
+
+<section class="services"
+
+id="services">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-badge">
+
+                WHAT WE OFFER
+
+            </span>
+
+            <h2>
+
+                Professional Digital
+                Services Tailored
+                To Your Business
+
+            </h2>
+
+            <p>
+
+                Every solution is designed with
+                performance, usability and long-term
+                scalability in mind, ensuring your
+                business is prepared for future growth.
+
+            </p>
+
+        </div>
+
+        <div class="services-cards">
+
+            <!-- Card 1 -->
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <img src="website.svg"
+
+                    alt="Website Development">
+
+                </div>
+
+                <h3>
+
+                    Website Development
+
+                </h3>
+
+                <p>
+
+                    Bespoke, responsive websites
+                    designed to reflect your brand,
+                    engage visitors and deliver an
+                    exceptional user experience.
+
+                </p>
+
+                <ul>
+
+                    <li>Responsive Design</li>
+
+                    <li>Modern User Interface</li>
+
+                    <li>Fast Performance</li>
+
+                    <li>SEO Ready</li>
+
+                </ul>
+
+            </article>
+
+
+
+            <!-- Card 2 -->
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <img src="business.svg"
+
+                    alt="Business Website">
+
+                </div>
+
+                <h3>
+
+                    Business Websites
+
+                </h3>
+
+                <p>
+
+                    Professional websites created
+                    to strengthen credibility,
+                    showcase your services and
+                    generate valuable enquiries.
+
+                </p>
+
+                <ul>
+
+                    <li>Company Profile</li>
+
+                    <li>Service Pages</li>
+
+                    <li>Contact Forms</li>
+
+                    <li>Google Maps</li>
+
+                </ul>
+
+            </article>
+
+
+
+            <!-- Card 3 -->
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <img src="ecommerce.svg"
+
+                    alt="E-Commerce">
+
+                </div>
+
+                <h3>
+
+                    E-Commerce Solutions
+
+                </h3>
+
+                <p>
+
+                    Online stores designed to
+                    provide a seamless shopping
+                    experience while supporting
+                    business growth.
+
+                </p>
+
+                <ul>
+
+                    <li>Product Catalogue</li>
+
+                    <li>Shopping Cart</li>
+
+                    <li>Secure Checkout</li>
+
+                    <li>Order Management</li>
+
+                </ul>
+
+            </article>
+
+
+
+            <!-- Card 4 -->
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <img src="landing.svg"
+
+                    alt="Landing Pages">
+
+                </div>
+
+                <h3>
+
+                    Landing Pages
+
+                </h3>
+
+                <p>
+
+                    High-converting landing pages
+                    created for marketing campaigns,
+                    product launches and lead
+                    generation.
+
+                </p>
+
+                <ul>
+
+                    <li>Campaign Pages</li>
+
+                    <li>Lead Forms</li>
+
+                    <li>Fast Loading</li>
+
+                    <li>Conversion Focused</li>
+
+                </ul>
+
+            </article>
+
+
+
+            <!-- Card 5 -->
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <img src="seo.svg"
+
+                    alt="SEO">
+
+                </div>
+
+                <h3>
+
+                    SEO Optimisation
+
+                </h3>
+
+                <p>
+
+                    Improve your online visibility
+                    with structured, search-friendly
+                    websites built according to
+                    recognised best practices.
+
+                </p>
+
+                <ul>
+
+                    <li>Technical SEO</li>
+
+                    <li>Meta Optimisation</li>
+
+                    <li>Performance</li>
+
+                    <li>Schema Ready</li>
+
+                </ul>
+
+            </article>
+
+
+
+            <!-- Card 6 -->
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <img src="maintenance.svg"
+
+                    alt="Maintenance">
+
+                </div>
+
+                <h3>
+
+                    Website Maintenance
+
+                </h3>
+
+                <p>
+
+                    Ongoing updates, technical
+                    support and continuous
+                    improvements to keep your
+                    website performing at its best.
+
+                </p>
+
+                <ul>
+
+                    <li>Regular Updates</li>
+
+                    <li>Security Checks</li>
+
+                    <li>Backups</li>
+
+                    <li>Technical Support</li>
+
+                </ul>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+<!--==========================================
+        FEATURED SERVICE DETAILS
+===========================================-->
+
+<section class="service-details">
+
+    <div class="container">
+
+        <!-- Website Development -->
+
+        <div class="detail-row">
+
+            <div class="detail-image">
+
+                <img src="service-web.webp"
+                     alt="Website Development">
+
+            </div>
+
+            <div class="detail-content">
+
+                <span class="section-badge">
+
+                    WEBSITE DEVELOPMENT
+
+                </span>
+
+                <h2>
+
+                    Premium Websites
+                    Built For Modern
+                    Businesses
+
+                </h2>
+
+                <p>
+
+                    We design and develop bespoke
+                    websites that combine elegant
+                    design, excellent performance
+                    and a seamless user experience.
+                    Every project is responsive,
+                    accessible and built to support
+                    your long-term business goals.
+
+                </p>
+
+                <div class="feature-list">
+
+                    <div class="feature-item">
+
+                        <img src="responsive.svg"
+                             alt="Responsive">
+
+                        <span>Fully Responsive Design</span>
+
+                    </div>
+
+                    <div class="feature-item">
+
+                        <img src="speed.svg"
+                             alt="Performance">
+
+                        <span>Fast Loading Performance</span>
+
+                    </div>
+
+                    <div class="feature-item">
+
+                        <img src="security.svg"
+                             alt="Security">
+
+                        <span>Modern Security Standards</span>
+
+                    </div>
+
+                    <div class="feature-item">
+
+                        <img src="seo.svg"
+                             alt="SEO">
+
+                        <span>Search Engine Ready</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- E-Commerce -->
+
+        <div class="detail-row reverse">
+
+            <div class="detail-image">
+
+                <img src="service-ecommerce.webp"
+                     alt="E-Commerce Solutions">
+
+            </div>
+
+            <div class="detail-content">
+
+                <span class="section-badge">
+
+                    E-COMMERCE
+
+                </span>
+
+                <h2>
+
+                    Online Stores
+                    Designed To
+                    Increase Sales
+
+                </h2>
+
+                <p>
+
+                    We create secure, user-friendly
+                    e-commerce platforms that provide
+                    a smooth shopping experience while
+                    making it simple to manage
+                    products, customers and orders.
+
+                </p>
+
+                <div class="feature-list">
+
+                    <div class="feature-item">
+
+                        <img src="ecommerce.svg"
+                             alt="Products">
+
+                        <span>Product Catalogue</span>
+
+                    </div>
+
+                    <div class="feature-item">
+
+                        <img src="analytics.svg"
+                             alt="Analytics">
+
+                        <span>Sales Analytics</span>
+
+                    </div>
+
+                    <div class="feature-item">
+
+                        <img src="cloud.svg"
+                             alt="Cloud">
+
+                        <span>Cloud Hosting Ready</span>
+
+                    </div>
+
+                    <div class="feature-item">
+
+                        <img src="maintenance.svg"
+                             alt="Support">
+
+                        <span>Continuous Support</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SEO & Optimisation -->
+
+        <div class="detail-row">
+
+            <div class="detail-image">
+
+                <img src="service-seo.webp"
+                     alt="SEO Optimisation">
+
+            </div>
+
+            <div class="detail-content">
+
+                <span class="section-badge">
+
+                    SEO & PERFORMANCE
+
+                </span>
+
+                <h2>
+
+                    Helping Your
+                    Business Reach
+                    More Customers
+
+                </h2>
+
+                <p>
+
+                    Every website is structured to
+                    support search visibility,
+                    improve loading performance and
+                    deliver an excellent experience
+                    across all modern devices.
+
+                </p>
+
+                <div class="feature-list">
+
+                    <div class="feature-item">
+
+                        <img src="website.svg"
+                             alt="Structure">
+
+                        <span>Clean Website Structure</span>
+
+                    </div>
+
+                    <div class="feature-item">
+
+                        <img src="speed.svg"
+                             alt="Speed">
+
+                        <span>Performance Optimisation</span>
+
+                    </div>
+
+                    <div class="feature-item">
+
+                        <img src="analytics.svg"
+                             alt="Analytics">
+
+                        <span>Visitor Insights</span>
+
+                    </div>
+
+                    <div class="feature-item">
+
+                        <img src="code.svg"
+                             alt="Code">
+
+                        <span>Standards-Compliant Code</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--==========================================
+        OUR DEVELOPMENT PROCESS
+===========================================-->
+
+<section class="process">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-badge">
+
+                OUR PROCESS
+
+            </span>
+
+            <h2>
+
+                A Structured Process
+                From Concept To Launch
+
+            </h2>
+
+            <p>
+
+                Every project follows a carefully
+                planned workflow to ensure quality,
+                transparency and successful delivery.
+
+            </p>
+
+        </div>
+
+        <div class="process-grid">
+
+            <article class="process-card">
+
+                <div class="process-number">
+
+                    01
+
+                </div>
+
+                <img src="strategy.svg"
+                     alt="Discovery">
+
+                <h3>
+
+                    Discovery
+
+                </h3>
+
+                <p>
+
+                    We begin by understanding your
+                    objectives, audience and business
+                    requirements.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="process-card">
+
+                <div class="process-number">
+
+                    02
+
+                </div>
+
+                <img src="website.svg"
+                     alt="Design">
+
+                <h3>
+
+                    Design
+
+                </h3>
+
+                <p>
+
+                    Wireframes and modern interfaces
+                    are created to deliver an engaging
+                    user experience.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="process-card">
+
+                <div class="process-number">
+
+                    03
+
+                </div>
+
+                <img src="code.svg"
+                     alt="Development">
+
+                <h3>
+
+                    Development
+
+                </h3>
+
+                <p>
+
+                    Clean, responsive and scalable
+                    code is developed using modern
+                    web standards.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="process-card">
+
+                <div class="process-number">
+
+                    04
+
+                </div>
+
+                <img src="rocket.svg"
+                     alt="Launch">
+
+                <h3>
+
+                    Launch
+
+                </h3>
+
+                <p>
+
+                    Following testing and approval,
+                    your website is deployed with
+                    continued technical support.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!--==========================================
+        WHY WORK WITH NOCTIS
+===========================================-->
+
+<section class="service-benefits">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-badge">
+
+                WHY CHOOSE US
+
+            </span>
+
+            <h2>
+
+                More Than A
+                Development Agency
+
+            </h2>
+
+            <p>
+
+                We focus on creating reliable,
+                future-ready digital solutions
+                that continue to deliver value
+                long after launch.
+
+            </p>
+
+        </div>
+
+        <div class="benefits-grid">
+
+            <article class="benefit-card">
+
+                <img src="speed.svg"
+                     alt="Performance">
+
+                <h3>
+
+                    Performance First
+
+                </h3>
+
+                <p>
+
+                    Every website is optimised for
+                    speed, responsiveness and an
+                    exceptional browsing experience.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="benefit-card">
+
+                <img src="security.svg"
+                     alt="Security">
+
+                <h3>
+
+                    Secure Development
+
+                </h3>
+
+                <p>
+
+                    Modern development practices
+                    help provide a reliable and
+                    secure digital foundation.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="benefit-card">
+
+                <img src="responsive.svg"
+                     alt="Responsive">
+
+                <h3>
+
+                    Responsive Design
+
+                </h3>
+
+                <p>
+
+                    Designed to perform seamlessly
+                    across desktops, tablets and
+                    smartphones.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="benefit-card">
+
+                <img src="analytics.svg"
+                     alt="Analytics">
+
+                <h3>
+
+                    Insight Driven
+
+                </h3>
+
+                <p>
+
+                    Build with future analytics
+                    integration in mind to better
+                    understand visitor behaviour.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="benefit-card">
+
+                <img src="maintenance.svg"
+                     alt="Support">
+
+                <h3>
+
+                    Ongoing Support
+
+                </h3>
+
+                <p>
+
+                    Continued maintenance and
+                    technical guidance after
+                    your project goes live.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="benefit-card">
+
+                <img src="growth.svg"
+                     alt="Growth">
+
+                <h3>
+
+                    Built For Growth
+
+                </h3>
+
+                <p>
+
+                    Flexible digital solutions
+                    designed to evolve alongside
+                    your business.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+<!--==========================================
+        FREQUENTLY ASKED QUESTIONS
+===========================================-->
+
+<section class="faq">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-badge">
+
+                FAQ
+
+            </span>
+
+            <h2>
+
+                Frequently Asked
+                Questions
+
+            </h2>
+
+            <p>
+
+                Answers to some of the questions
+                we are asked most frequently by
+                our clients.
+
+            </p>
+
+        </div>
+
+        <div class="faq-list">
+
+            <article class="faq-item">
+
+                <button class="faq-question">
+
+                    <span>
+
+                        How long does a website project take?
+
+                    </span>
+
+                    <img src="faq-plus.svg"
+                         alt="Expand">
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Project timelines vary depending on
+                        the scope and complexity. A standard
+                        business website is typically completed
+                        within one to three weeks.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="faq-item">
+
+                <button class="faq-question">
+
+                    <span>
+
+                        Will my website work on mobile devices?
+
+                    </span>
+
+                    <img src="faq-plus.svg"
+                         alt="Expand">
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Yes. Every website is designed using
+                        a mobile-first approach to ensure an
+                        excellent experience across all modern
+                        devices.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="faq-item">
+
+                <button class="faq-question">
+
+                    <span>
+
+                        Do you provide ongoing support?
+
+                    </span>
+
+                    <img src="faq-plus.svg"
+                         alt="Expand">
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Yes. We offer continued technical
+                        support, maintenance and updates
+                        after your website has been launched.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="faq-item">
+
+                <button class="faq-question">
+
+                    <span>
+
+                        Can my website be expanded in the future?
+
+                    </span>
+
+                    <img src="faq-plus.svg"
+                         alt="Expand">
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Absolutely. Our websites are designed
+                        with future growth in mind, making it
+                        straightforward to add new features
+                        and functionality.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!--==========================================
+                CALL TO ACTION
+===========================================-->
+
+<section class="cta">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <span class="section-badge">
+
+                START YOUR PROJECT
+
+            </span>
+
+            <h2>
+
+                Let's Create
+                Something Exceptional
+
+            </h2>
+
+            <p>
+
+                Whether you require a business
+                website, an e-commerce platform
+                or a bespoke digital solution,
+                Noctis Technologies is ready
+                to help bring your vision to life.
+
+            </p>
+
+            <div class="cta-buttons">
+
+                <a href="contact.html"
+                   class="btn-primary">
+
+                    Request A Quote
+
+                </a>
+
+                <a href="portfolio.html"
+                   class="btn-secondary">
+
+                    View Portfolio
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!--==========================================
+                    FOOTER
+===========================================-->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-about">
+
+                <img src="logo.svg"
+                     alt="Noctis Technologies">
+
+                <p>
+
+                    Premium digital solutions
+                    designed to help modern
+                    businesses grow with confidence.
+
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>
+
+                    Company
+
+                </h3>
+
+                <ul>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="services.html">Services</a></li>
+
+                    <li><a href="portfolio.html">Portfolio</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-contact">
+
+                <h3>
+
+                    Contact
+
+                </h3>
+
+                <ul>
+
+                    <li>Email</li>
+
+                    <li>Phone</li>
+
+                    <li>Location</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 Noctis Technologies.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</main>
+
+<script src="index.js"></script>
+
+</body>
+
+</html>

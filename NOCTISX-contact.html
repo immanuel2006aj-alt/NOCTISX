@@ -1,0 +1,3135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+
+Contact • Noctis Technologies
+
+</title>
+
+<meta name="description"
+content="Get in touch with Noctis Technologies to discuss your next website, e-commerce platform or digital project.">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<style>
+
+/* Contact CSS */
+/*==================================================
+                    RESET
+==================================================*/
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+}
+
+:root{
+
+--primary:#E11D2E;
+
+--background:#050505;
+
+--card:#111111;
+
+--white:#FFFFFF;
+
+--text:#B6B6B6;
+
+--border:#262626;
+
+--transition:.35s ease;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+font-family:"Inter",sans-serif;
+
+background:var(--background);
+
+color:var(--white);
+
+line-height:1.7;
+
+overflow-x:hidden;
+
+}
+
+img{
+
+display:block;
+
+max-width:100%;
+
+}
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+.container{
+
+width:min(1180px,92%);
+
+margin:auto;
+
+}
+
+section{
+
+padding:110px 0;
+
+}
+
+
+
+/*==================================================
+                SECTION HEADER
+==================================================*/
+
+.section-badge{
+
+display:inline-flex;
+
+padding:10px 18px;
+
+border-radius:100px;
+
+background:rgba(225,29,46,.12);
+
+border:1px solid rgba(225,29,46,.20);
+
+color:var(--primary);
+
+font-size:13px;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+margin-bottom:20px;
+
+}
+
+.section-header{
+
+text-align:center;
+
+max-width:760px;
+
+margin:0 auto 70px;
+
+}
+
+.section-header h2{
+
+font-family:"Sora",sans-serif;
+
+font-size:48px;
+
+margin:20px 0;
+
+line-height:1.15;
+
+}
+
+.section-header p{
+
+color:var(--text);
+
+line-height:1.9;
+
+font-size:17px;
+
+}
+
+
+
+/*==================================================
+                    HEADER
+==================================================*/
+
+.header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+z-index:1000;
+
+background:rgba(5,5,5,.92);
+
+backdrop-filter:blur(18px);
+
+border-bottom:1px solid var(--border);
+
+}
+
+.navbar{
+
+height:82px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+}
+
+.logo img{
+
+height:44px;
+
+}
+
+.nav-menu{
+
+display:flex;
+
+gap:36px;
+
+list-style:none;
+
+}
+
+.nav-menu a{
+
+color:#D6D6D6;
+
+transition:.3s;
+
+}
+
+.nav-menu a:hover,
+
+.nav-menu a.active{
+
+color:var(--primary);
+
+}
+
+
+
+/*==================================================
+                    BUTTONS
+==================================================*/
+
+.btn-primary{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:16px 34px;
+
+background:var(--primary);
+
+color:#fff;
+
+border-radius:16px;
+
+font-weight:700;
+
+transition:var(--transition);
+
+}
+
+.btn-primary:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 18px 40px rgba(225,29,46,.28);
+
+}
+
+.btn-secondary{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:16px 34px;
+
+border-radius:16px;
+
+border:1px solid var(--border);
+
+transition:var(--transition);
+
+}
+
+.btn-secondary:hover{
+
+border-color:var(--primary);
+
+background:#111;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+}
+
+
+
+/*==================================================
+                MOBILE MENU
+==================================================*/
+
+.menu-btn{
+
+display:none;
+
+width:48px;
+
+height:48px;
+
+background:#111;
+
+border:none;
+
+border-radius:14px;
+
+cursor:pointer;
+
+}
+
+.mobile-menu{
+
+position:fixed;
+
+top:0;
+
+right:-100%;
+
+width:300px;
+
+height:100vh;
+
+background:#090909;
+
+padding:100px 35px;
+
+border-left:1px solid var(--border);
+
+transition:.4s;
+
+z-index:1200;
+
+}
+
+.mobile-menu.active{
+
+right:0;
+
+}
+
+.mobile-menu a{
+
+display:block;
+
+margin-bottom:22px;
+
+font-size:18px;
+
+}
+
+.close-btn{
+
+position:absolute;
+
+top:25px;
+
+right:25px;
+
+width:48px;
+
+height:48px;
+
+background:#111;
+
+border:none;
+
+border-radius:14px;
+
+cursor:pointer;
+
+}
+
+
+
+/*==================================================
+                CONTACT HERO
+==================================================*/
+
+.contact-hero{
+
+padding:170px 0 120px;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.contact-hero::before{
+
+content:"";
+
+position:absolute;
+
+width:420px;
+
+height:420px;
+
+top:-120px;
+
+right:-120px;
+
+background:rgba(225,29,46,.12);
+
+border-radius:50%;
+
+filter:blur(120px);
+
+}
+
+.contact-grid{
+
+display:grid;
+
+gap:70px;
+
+align-items:center;
+
+}
+
+.contact-content{
+
+position:relative;
+
+z-index:2;
+
+}
+
+.contact-content h1{
+
+font-family:"Sora",sans-serif;
+
+font-size:58px;
+
+line-height:1.1;
+
+margin:24px 0;
+
+}
+
+.contact-content p{
+
+max-width:620px;
+
+font-size:17px;
+
+line-height:1.9;
+
+color:var(--text);
+
+margin-bottom:38px;
+
+}
+
+.contact-image img{
+
+width:100%;
+
+border-radius:30px;
+
+border:1px solid var(--border);
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(min-width:992px){
+
+.contact-grid{
+
+grid-template-columns:1.1fr .9fr;
+
+}
+
+}
+
+@media(max-width:991px){
+
+.nav-menu{
+
+display:none;
+
+}
+
+.menu-btn{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+.contact-content h1{
+
+font-size:42px;
+
+}
+
+}
+/*==================================================
+            CONTACT INFORMATION
+==================================================*/
+
+.contact-info{
+
+    padding:120px 0;
+
+}
+
+.contact-cards{
+
+    display:grid;
+
+    gap:24px;
+
+}
+
+.contact-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:linear-gradient(180deg,#141414,#0B0B0B);
+
+    border:1px solid var(--border);
+
+    border-radius:28px;
+
+    padding:38px 30px;
+
+    text-align:center;
+
+    transition:var(--transition);
+
+}
+
+.contact-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    top:-90px;
+
+    right:-90px;
+
+    border-radius:50%;
+
+    background:rgba(225,29,46,.08);
+
+    filter:blur(80px);
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 28px 70px rgba(225,29,46,.14);
+
+}
+
+.contact-card:hover::before{
+
+    opacity:1;
+
+}
+
+
+
+/*==================================================
+                ICON
+==================================================*/
+
+.contact-icon{
+
+    width:76px;
+
+    height:76px;
+
+    margin:0 auto 24px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:22px;
+
+    background:rgba(225,29,46,.08);
+
+    border:1px solid rgba(225,29,46,.20);
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.contact-icon img{
+
+    width:38px;
+
+}
+
+
+
+/*==================================================
+                CONTENT
+==================================================*/
+
+.contact-card h3{
+
+    position:relative;
+
+    z-index:2;
+
+    font-family:"Sora",sans-serif;
+
+    font-size:24px;
+
+    margin-bottom:14px;
+
+}
+
+.contact-card p{
+
+    position:relative;
+
+    z-index:2;
+
+    color:var(--text);
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+.contact-card a,
+
+.contact-card span{
+
+    position:relative;
+
+    z-index:2;
+
+    color:#ffffff;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    word-break:break-word;
+
+}
+
+.contact-card a:hover{
+
+    color:var(--primary);
+
+}
+
+
+
+/*==================================================
+            CONTACT HIGHLIGHTS
+==================================================*/
+
+.contact-highlights{
+
+    padding:120px 0;
+
+}
+
+.highlight-grid{
+
+    display:grid;
+
+    gap:24px;
+
+}
+
+.highlight-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:28px;
+
+    padding:36px 30px;
+
+    transition:var(--transition);
+
+}
+
+.highlight-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:170px;
+
+    height:170px;
+
+    right:-90px;
+
+    bottom:-90px;
+
+    background:rgba(225,29,46,.08);
+
+    border-radius:50%;
+
+    filter:blur(70px);
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.highlight-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 28px 70px rgba(225,29,46,.14);
+
+}
+
+.highlight-card:hover::after{
+
+    opacity:1;
+
+}
+
+.highlight-card img{
+
+    width:54px;
+
+    margin-bottom:22px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.highlight-card h3{
+
+    position:relative;
+
+    z-index:2;
+
+    font-family:"Sora",sans-serif;
+
+    font-size:24px;
+
+    margin-bottom:16px;
+
+}
+
+.highlight-card p{
+
+    position:relative;
+
+    z-index:2;
+
+    color:var(--text);
+
+    line-height:1.8;
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(min-width:768px){
+
+    .contact-cards{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .highlight-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(min-width:1200px){
+
+    .contact-cards{
+
+        grid-template-columns:repeat(4,1fr);
+
+    }
+
+    .highlight-grid{
+
+        grid-template-columns:repeat(4,1fr);
+
+    }
+
+}
+
+@media(max-width:767px){
+
+    .contact-card,
+
+    .highlight-card{
+
+        padding:30px 24px;
+
+    }
+
+    .contact-card h3,
+
+    .highlight-card h3{
+
+        font-size:22px;
+
+    }
+
+}
+/*==================================================
+                CONTACT FORM
+==================================================*/
+
+.contact-form-section{
+
+    padding:120px 0;
+
+}
+
+.form-grid{
+
+    display:grid;
+
+    gap:60px;
+
+    align-items:start;
+
+}
+
+
+
+/*==================================================
+                LEFT CONTENT
+==================================================*/
+
+.form-content h2{
+
+    font-family:"Sora",sans-serif;
+
+    font-size:46px;
+
+    line-height:1.15;
+
+    margin:22px 0;
+
+}
+
+.form-content p{
+
+    color:var(--text);
+
+    line-height:1.9;
+
+    margin-bottom:34px;
+
+}
+
+
+
+/*==================================================
+                FEATURES
+==================================================*/
+
+.project-features{
+
+    display:grid;
+
+    gap:18px;
+
+}
+
+.feature-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    padding:18px 22px;
+
+    transition:var(--transition);
+
+}
+
+.feature-item:hover{
+
+    border-color:var(--primary);
+
+    transform:translateX(6px);
+
+}
+
+.feature-item img{
+
+    width:34px;
+
+    flex-shrink:0;
+
+}
+
+.feature-item span{
+
+    color:#E5E5E5;
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+
+
+/*==================================================
+                FORM BOX
+==================================================*/
+
+.contact-form-box{
+
+    background:linear-gradient(180deg,#141414,#0B0B0B);
+
+    border:1px solid var(--border);
+
+    border-radius:30px;
+
+    padding:42px;
+
+}
+
+.contact-form-box form{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:24px;
+
+}
+
+
+
+/*==================================================
+                INPUTS
+==================================================*/
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.input-group label{
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+    color:#F2F2F2;
+
+}
+
+.input-group input,
+
+.input-group select,
+
+.input-group textarea{
+
+    width:100%;
+
+    background:#111;
+
+    color:#fff;
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+    padding:16px 18px;
+
+    font-size:15px;
+
+    font-family:inherit;
+
+    outline:none;
+
+    transition:var(--transition);
+
+}
+
+.input-group input:focus,
+
+.input-group select:focus,
+
+.input-group textarea:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 3px rgba(225,29,46,.12);
+
+}
+
+.input-group textarea{
+
+    resize:vertical;
+
+    min-height:180px;
+
+}
+
+.input-group.full-width{
+
+    grid-column:1/-1;
+
+}
+
+
+
+/*==================================================
+                BUTTON
+==================================================*/
+
+.submit-btn{
+
+    grid-column:1/-1;
+
+    width:100%;
+
+    justify-content:center;
+
+    gap:12px;
+
+    margin-top:10px;
+
+}
+
+.submit-btn img{
+
+    width:20px;
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(min-width:992px){
+
+    .form-grid{
+
+        grid-template-columns:0.95fr 1.05fr;
+
+    }
+
+}
+
+@media(max-width:991px){
+
+    .form-content h2{
+
+        font-size:38px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .contact-form-box{
+
+        padding:28px;
+
+    }
+
+    .contact-form-box form{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .input-group.full-width{
+
+        grid-column:auto;
+
+    }
+
+    .submit-btn{
+
+        grid-column:auto;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .form-content h2{
+
+        font-size:32px;
+
+    }
+
+}
+/*==================================================
+                BUSINESS HOURS
+==================================================*/
+
+.business-hours{
+
+    padding:120px 0;
+
+}
+
+.hours-grid{
+
+    display:grid;
+
+    gap:60px;
+
+    align-items:start;
+
+}
+
+.hours-content h2{
+
+    font-family:"Sora",sans-serif;
+
+    font-size:46px;
+
+    line-height:1.15;
+
+    margin:22px 0;
+
+}
+
+.hours-content p{
+
+    color:var(--text);
+
+    line-height:1.9;
+
+    margin-bottom:34px;
+
+}
+
+.hours-list{
+
+    display:grid;
+
+    gap:18px;
+
+}
+
+.hour-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:22px 24px;
+
+    transition:var(--transition);
+
+}
+
+.hour-item:hover{
+
+    border-color:var(--primary);
+
+    transform:translateX(6px);
+
+}
+
+.hour-item h4{
+
+    font-family:"Sora",sans-serif;
+
+    font-size:20px;
+
+    margin-bottom:6px;
+
+}
+
+.hour-item p{
+
+    margin:0;
+
+    color:var(--text);
+
+}
+
+.hour-item strong{
+
+    color:var(--primary);
+
+    font-size:17px;
+
+}
+
+
+
+/*==================================================
+                OFFICE CARD
+==================================================*/
+
+.office-card{
+
+    background:linear-gradient(180deg,#141414,#0B0B0B);
+
+    border:1px solid var(--border);
+
+    border-radius:30px;
+
+    padding:40px;
+
+}
+
+.office-card img{
+
+    width:60px;
+
+    margin-bottom:24px;
+
+}
+
+.office-card h3{
+
+    font-family:"Sora",sans-serif;
+
+    font-size:30px;
+
+    margin-bottom:18px;
+
+}
+
+.office-card p{
+
+    color:var(--text);
+
+    line-height:1.9;
+
+    margin-bottom:14px;
+
+}
+
+
+
+/*==================================================
+                    MAP
+==================================================*/
+
+.map-section{
+
+    padding:120px 0;
+
+}
+
+.map-box{
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    border:1px solid var(--border);
+
+}
+
+.map-box iframe{
+
+    width:100%;
+
+    height:520px;
+
+    border:none;
+
+}
+
+
+
+/*==================================================
+                    FAQ
+==================================================*/
+
+.contact-faq{
+
+    padding:120px 0;
+
+}
+
+.faq-list{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.faq-item{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:22px;
+
+    padding:28px;
+
+    margin-bottom:20px;
+
+    transition:var(--transition);
+
+}
+
+.faq-item:hover{
+
+    border-color:var(--primary);
+
+}
+
+.faq-item h3{
+
+    font-family:"Sora",sans-serif;
+
+    margin-bottom:14px;
+
+    font-size:22px;
+
+}
+
+.faq-item p{
+
+    color:var(--text);
+
+    line-height:1.8;
+
+}
+
+
+
+/*==================================================
+                    CTA
+==================================================*/
+
+.cta{
+
+    padding:120px 0;
+
+}
+
+.cta-box{
+
+    text-align:center;
+
+    background:linear-gradient(180deg,#141414,#090909);
+
+    border:1px solid var(--border);
+
+    border-radius:32px;
+
+    padding:90px 40px;
+
+}
+
+.cta-box h2{
+
+    font-family:"Sora",sans-serif;
+
+    font-size:52px;
+
+    margin:22px 0;
+
+}
+
+.cta-box p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:var(--text);
+
+    line-height:1.9;
+
+}
+
+.cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    margin-top:40px;
+
+}
+
+
+
+/*==================================================
+                    FOOTER
+==================================================*/
+
+.footer{
+
+    border-top:1px solid var(--border);
+
+    padding:80px 0 30px;
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    gap:40px;
+
+}
+
+.footer-logo img{
+
+    height:46px;
+
+    margin-bottom:24px;
+
+}
+
+.footer-social{
+
+    display:flex;
+
+    gap:16px;
+
+    margin-top:24px;
+
+}
+
+.footer-social a{
+
+    width:48px;
+
+    height:48px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:14px;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    transition:var(--transition);
+
+}
+
+.footer-social a:hover{
+
+    border-color:var(--primary);
+
+    transform:translateY(-4px);
+
+}
+
+.footer-social img{
+
+    width:20px;
+
+}
+
+.footer h3{
+
+    font-family:"Sora",sans-serif;
+
+    margin-bottom:18px;
+
+}
+
+.footer p,
+
+.footer li{
+
+    color:var(--text);
+
+    line-height:1.9;
+
+    margin-bottom:12px;
+
+}
+
+.footer-links a:hover{
+
+    color:var(--primary);
+
+}
+
+.footer-bottom{
+
+    margin-top:60px;
+
+    padding-top:24px;
+
+    border-top:1px solid var(--border);
+
+    text-align:center;
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(min-width:992px){
+
+.hours-grid{
+
+grid-template-columns:1fr .9fr;
+
+}
+
+}
+
+@media(min-width:768px){
+
+.footer-grid{
+
+grid-template-columns:2fr 1fr 1fr 1fr;
+
+}
+
+}
+
+@media(max-width:991px){
+
+.cta-box h2{
+
+font-size:40px;
+
+}
+
+.hours-content h2{
+
+font-size:38px;
+
+}
+
+}
+
+@media(max-width:767px){
+
+.hour-item{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:12px;
+
+}
+
+.cta-buttons{
+
+flex-direction:column;
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.office-card{
+
+padding:30px;
+
+}
+
+.map-box iframe{
+
+height:400px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.cta-box{
+
+padding:60px 24px;
+
+}
+
+.cta-box h2{
+
+font-size:32px;
+
+}
+
+.hours-content h2{
+
+font-size:32px;
+
+}
+
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<!--==========================================
+                HEADER
+===========================================-->
+
+<header class="header">
+
+<div class="container">
+
+<nav class="navbar">
+
+<a href="index.html"
+
+class="logo">
+
+<img src="logo.svg"
+
+alt="Noctis Technologies">
+
+</a>
+
+<ul class="nav-menu">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="services.html">Services</a></li>
+
+<li><a href="portfolio.html">Portfolio</a></li>
+
+<li><a href="team.html">Team</a></li>
+
+<li><a href="contact.html"
+
+class="active">Contact</a></li>
+
+</ul>
+
+<div class="nav-right">
+
+<a href="#contact-form"
+
+class="btn-primary">
+
+Get In Touch
+
+</a>
+
+<button class="menu-btn">
+
+<img src="menu.svg"
+
+alt="Menu">
+
+</button>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<!--==========================================
+            MOBILE MENU
+===========================================-->
+
+<div class="mobile-menu">
+
+<button class="close-btn">
+
+<img src="close.svg"
+
+alt="Close">
+
+</button>
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="services.html">Services</a>
+
+<a href="portfolio.html">Portfolio</a>
+
+<a href="team.html">Team</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+
+
+<main>
+
+
+
+<!--==========================================
+            CONTACT HERO
+===========================================-->
+
+<section class="contact-hero">
+
+<div class="container">
+
+<div class="contact-grid">
+
+<div class="contact-content">
+
+<span class="section-badge">
+
+CONTACT US
+
+</span>
+
+<h1>
+
+Let's Build
+Something
+Exceptional Together.
+
+</h1>
+
+<p>
+
+Whether you have a new idea,
+require a professional website,
+or would like to discuss your next
+digital project, we would be delighted
+to hear from you.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#contact-form"
+
+class="btn-primary">
+
+Send A Message
+
+</a>
+
+<a href="portfolio.html"
+
+class="btn-secondary">
+
+View Portfolio
+
+</a>
+
+</div>
+
+</div>
+
+<div class="contact-image">
+
+<img src="contact-hero.webp"
+
+alt="Contact Noctis Technologies">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!--==========================================
+            CONTACT INFORMATION
+===========================================-->
+
+<section class="contact-info">
+
+<div class="container">
+
+<div class="section-header">
+
+<span class="section-badge">
+
+GET IN TOUCH
+
+</span>
+
+<h2>
+
+We're Always
+Ready To Help
+
+</h2>
+
+<p>
+
+Whether you have a question,
+require a quotation or wish to
+discuss your next project,
+our team is ready to assist.
+
+</p>
+
+</div>
+
+
+
+<div class="contact-cards">
+
+
+
+<!-- EMAIL -->
+
+<article class="contact-card">
+
+<div class="contact-icon">
+
+<img src="mail.svg"
+
+alt="Email">
+
+</div>
+
+<h3>
+
+Email
+
+</h3>
+
+<p>
+
+Send us your project enquiry
+and we'll respond promptly.
+
+</p>
+
+<a href="mailto:hello@noctistechnologies.com">
+
+hello@noctistechnologies.com
+
+</a>
+
+</article>
+
+
+
+
+
+<!-- PHONE -->
+
+<article class="contact-card">
+
+<div class="contact-icon">
+
+<img src="phone.svg"
+
+alt="Phone">
+
+</div>
+
+<h3>
+
+Telephone
+
+</h3>
+
+<p>
+
+Speak with us directly
+regarding your project.
+
+</p>
+
+<a href="tel:+91XXXXXXXXXX">
+
++91 XXXXX XXXXX
+
+</a>
+
+</article>
+
+
+
+
+
+<!-- WHATSAPP -->
+
+<article class="contact-card">
+
+<div class="contact-icon">
+
+<img src="whatsapp.svg"
+
+alt="WhatsApp">
+
+</div>
+
+<h3>
+
+WhatsApp
+
+</h3>
+
+<p>
+
+Receive quick replies and
+project updates through
+WhatsApp.
+
+</p>
+
+<a href="#">
+
+Chat With Us
+
+</a>
+
+</article>
+
+
+
+
+
+<!-- LOCATION -->
+
+<article class="contact-card">
+
+<div class="contact-icon">
+
+<img src="location.svg"
+
+alt="Location">
+
+</div>
+
+<h3>
+
+Location
+
+</h3>
+
+<p>
+
+Serving businesses across
+India with modern digital
+solutions.
+
+</p>
+
+<span>
+
+Tamil Nadu, India
+
+</span>
+
+</article>
+
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!--==========================================
+            CONTACT HIGHLIGHTS
+===========================================-->
+
+<section class="contact-highlights">
+
+<div class="container">
+
+<div class="highlight-grid">
+
+
+
+<article class="highlight-card">
+
+<img src="clock.svg"
+
+alt="Response">
+
+<h3>
+
+Quick Response
+
+</h3>
+
+<p>
+
+Most enquiries receive
+a response within one
+business day.
+
+</p>
+
+</article>
+
+
+
+
+
+<article class="highlight-card">
+
+<img src="support.svg"
+
+alt="Support">
+
+<h3>
+
+Professional Support
+
+</h3>
+
+<p>
+
+Reliable guidance from
+planning through to
+launch and beyond.
+
+</p>
+
+</article>
+
+
+
+
+
+<article class="highlight-card">
+
+<img src="security.svg"
+
+alt="Secure">
+
+<h3>
+
+Secure Communication
+
+</h3>
+
+<p>
+
+Your project information
+is treated with care and
+professionalism.
+
+</p>
+
+</article>
+
+
+
+
+
+<article class="highlight-card">
+
+<img src="rocket.svg"
+
+alt="Launch">
+
+<h3>
+
+Project Delivery
+
+</h3>
+
+<p>
+
+Modern websites delivered
+with quality, performance
+and reliability.
+
+</p>
+
+</article>
+
+
+
+</div>
+
+</div>
+
+</section>
+<!--==========================================
+            CONTACT FORM
+===========================================-->
+
+<section class="contact-form-section"
+
+id="contact-form">
+
+<div class="container">
+
+<div class="form-grid">
+
+
+
+<div class="form-content">
+
+<span class="section-badge">
+
+START A PROJECT
+
+</span>
+
+<h2>
+
+Tell Us About
+Your Vision
+
+</h2>
+
+<p>
+
+Complete the form and provide
+a brief overview of your project.
+We'll review your requirements
+and get back to you as soon as
+possible.
+
+</p>
+
+<div class="project-features">
+
+<div class="feature-item">
+
+<img src="website.svg"
+
+alt="Website">
+
+<span>
+
+Professional Website Development
+
+</span>
+
+</div>
+
+<div class="feature-item">
+
+<img src="ecommerce.svg"
+
+alt="E-Commerce">
+
+<span>
+
+Modern E-Commerce Solutions
+
+</span>
+
+</div>
+
+<div class="feature-item">
+
+<img src="seo.svg"
+
+alt="SEO">
+
+<span>
+
+SEO & Performance Optimisation
+
+</span>
+
+</div>
+
+<div class="feature-item">
+
+<img src="support.svg"
+
+alt="Support">
+
+<span>
+
+Long-Term Technical Support
+
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="contact-form-box">
+
+<form>
+
+
+
+<div class="input-group">
+
+<label>
+
+Full Name
+
+</label>
+
+<input
+
+type="text"
+
+placeholder="Enter your full name"
+
+required>
+
+</div>
+
+
+
+<div class="input-group">
+
+<label>
+
+Email Address
+
+</label>
+
+<input
+
+type="email"
+
+placeholder="Enter your email address"
+
+required>
+
+</div>
+
+
+
+<div class="input-group">
+
+<label>
+
+Telephone Number
+
+</label>
+
+<input
+
+type="tel"
+
+placeholder="Enter your telephone number">
+
+</div>
+
+
+
+<div class="input-group">
+
+<label>
+
+Company Name
+
+</label>
+
+<input
+
+type="text"
+
+placeholder="Business or organisation">
+
+</div>
+
+
+
+<div class="input-group">
+
+<label>
+
+Required Service
+
+</label>
+
+<select>
+
+<option>
+
+Select a service
+
+</option>
+
+<option>
+
+Business Website
+
+</option>
+
+<option>
+
+E-Commerce Website
+
+</option>
+
+<option>
+
+Landing Page
+
+</option>
+
+<option>
+
+Website Redesign
+
+</option>
+
+<option>
+
+SEO Optimisation
+
+</option>
+
+<option>
+
+Website Maintenance
+
+</option>
+
+<option>
+
+Custom Development
+
+</option>
+
+</select>
+
+</div>
+
+
+
+<div class="input-group">
+
+<label>
+
+Estimated Budget
+
+</label>
+
+<select>
+
+<option>
+
+Select your budget
+
+</option>
+
+<option>
+
+Below ₹10,000
+
+</option>
+
+<option>
+
+₹10,000 – ₹25,000
+
+</option>
+
+<option>
+
+₹25,000 – ₹50,000
+
+</option>
+
+<option>
+
+Above ₹50,000
+
+</option>
+
+</select>
+
+</div>
+
+
+
+<div class="input-group full-width">
+
+<label>
+
+Project Details
+
+</label>
+
+<textarea
+
+rows="7"
+
+placeholder="Describe your project, objectives and any specific requirements..."></textarea>
+
+</div>
+
+
+
+<button
+
+type="submit"
+
+class="btn-primary submit-btn">
+
+Send Enquiry
+
+<img
+
+src="send.svg"
+
+alt="Send">
+
+</button>
+
+
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!--==========================================
+            BUSINESS HOURS
+===========================================-->
+
+<section class="business-hours">
+
+<div class="container">
+
+<div class="hours-grid">
+
+<div class="hours-content">
+
+<span class="section-badge">
+
+BUSINESS HOURS
+
+</span>
+
+<h2>
+
+We're Available
+To Support
+Your Business
+
+</h2>
+
+<p>
+
+Our team is available throughout the
+week to answer enquiries, discuss new
+projects and provide professional
+technical support.
+
+</p>
+
+<div class="hours-list">
+
+<div class="hour-item">
+
+<div>
+
+<h4>
+
+Monday – Saturday
+
+</h4>
+
+<p>
+
+Regular Business Hours
+
+</p>
+
+</div>
+
+<strong>
+
+10:00 AM – 7:00 PM
+
+</strong>
+
+</div>
+
+
+
+<div class="hour-item">
+
+<div>
+
+<h4>
+
+Sunday
+
+</h4>
+
+<p>
+
+Weekend Support
+
+</p>
+
+</div>
+
+<strong>
+
+6:00 AM – 6:00 PM
+
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="office-card">
+
+<img src="location.svg"
+
+alt="Office Location">
+
+<h3>
+
+Office Information
+
+</h3>
+
+<p>
+
+<strong>
+
+Noctis Technologies
+
+</strong>
+
+</p>
+
+<p>
+
+Tamil Nadu, India
+
+</p>
+
+<p>
+
+Professional Website Development
+
+</p>
+
+<p>
+
+E-Commerce Solutions
+
+</p>
+
+<p>
+
+Landing Pages & Business Websites
+
+</p>
+
+<p>
+
+SEO & Website Maintenance
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!--==========================================
+            GOOGLE MAP
+===========================================-->
+
+<section class="map-section">
+
+<div class="container">
+
+<div class="section-header">
+
+<span class="section-badge">
+
+OUR LOCATION
+
+</span>
+
+<h2>
+
+Serving Clients
+Across India
+
+</h2>
+
+<p>
+
+Noctis Technologies proudly provides
+professional web development services
+to businesses throughout India and
+internationally.
+
+</p>
+
+</div>
+
+<div class="map-box">
+
+<iframe
+
+src="https://www.google.com/maps?q=Tamil+Nadu,+India&output=embed"
+
+loading="lazy"
+
+allowfullscreen>
+
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!--==========================================
+            FREQUENTLY ASKED QUESTIONS
+===========================================-->
+
+<section class="contact-faq">
+
+<div class="container">
+
+<div class="section-header">
+
+<span class="section-badge">
+
+FAQ
+
+</span>
+
+<h2>
+
+Frequently Asked
+Questions
+
+</h2>
+
+<p>
+
+Quick answers to some of the most
+common questions about our services.
+
+</p>
+
+</div>
+
+<div class="faq-list">
+
+<article class="faq-item">
+
+<h3>
+
+How quickly will I receive a response?
+
+</h3>
+
+<p>
+
+We aim to respond to all enquiries
+within one business day.
+
+</p>
+
+</article>
+
+
+
+<article class="faq-item">
+
+<h3>
+
+Do you provide custom quotations?
+
+</h3>
+
+<p>
+
+Yes. Every quotation is tailored to
+your business requirements and
+project objectives.
+
+</p>
+
+</article>
+
+
+
+<article class="faq-item">
+
+<h3>
+
+Can you redesign an existing website?
+
+</h3>
+
+<p>
+
+Absolutely. We redesign outdated
+websites with modern layouts,
+improved performance and a better
+user experience.
+
+</p>
+
+</article>
+
+
+
+<article class="faq-item">
+
+<h3>
+
+Do you provide ongoing support?
+
+</h3>
+
+<p>
+
+Yes. We offer maintenance, technical
+support and future upgrades after
+your website has been launched.
+
+</p>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+<!--==========================================
+                CALL TO ACTION
+===========================================-->
+
+<section class="cta">
+
+<div class="container">
+
+<div class="cta-box">
+
+<span class="section-badge">
+
+LET'S WORK TOGETHER
+
+</span>
+
+<h2>
+
+Ready To Build
+Your Next Digital
+Project?
+
+</h2>
+
+<p>
+
+Whether you need a professional
+business website, an e-commerce
+platform or a bespoke digital solution,
+Noctis Technologies is ready to bring
+your vision to life.
+
+</p>
+
+<div class="cta-buttons">
+
+<a href="#contact-form"
+
+class="btn-primary">
+
+Request A Quote
+
+</a>
+
+<a href="portfolio.html"
+
+class="btn-secondary">
+
+View Portfolio
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!--==========================================
+                    FOOTER
+===========================================-->
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="footer-grid">
+
+
+
+<div class="footer-about">
+
+<a href="index.html"
+
+class="footer-logo">
+
+<img src="logo.svg"
+
+alt="Noctis Technologies">
+
+</a>
+
+<p>
+
+Premium web design and development
+solutions crafted for ambitious
+businesses seeking modern digital
+experiences.
+
+</p>
+
+<div class="footer-social">
+
+<a href="#">
+
+<img src="facebook.svg"
+
+alt="Facebook">
+
+</a>
+
+<a href="#">
+
+<img src="instagram.svg"
+
+alt="Instagram">
+
+</a>
+
+<a href="#">
+
+<img src="linkedin.svg"
+
+alt="LinkedIn">
+
+</a>
+
+<a href="#">
+
+<img src="github-social.svg"
+
+alt="GitHub">
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="footer-links">
+
+<h3>
+
+Company
+
+</h3>
+
+<ul>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="services.html">Services</a></li>
+
+<li><a href="portfolio.html">Portfolio</a></li>
+
+<li><a href="team.html">Team</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+
+
+<div class="footer-services">
+
+<h3>
+
+Services
+
+</h3>
+
+<ul>
+
+<li>Business Websites</li>
+
+<li>E-Commerce</li>
+
+<li>Landing Pages</li>
+
+<li>SEO Optimisation</li>
+
+<li>Automation</li>
+
+<li>Maintenance</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="footer-contact">
+
+<h3>
+
+Contact
+
+</h3>
+
+<ul>
+
+<li>
+
+<img src="mail.svg"
+
+alt="Email">
+
+hello@noctistechnologies.com
+
+</li>
+
+<li>
+
+<img src="phone.svg"
+
+alt="Phone">
+
++91 XXXXX XXXXX
+
+</li>
+
+<li>
+
+<img src="location.svg"
+
+alt="Location">
+
+Tamil Nadu, India
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+
+<div class="footer-bottom">
+
+<p>
+
+© 2026 Noctis Technologies. All Rights Reserved.
+
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+</main>
+
+<script src="index.js"></script>
+
+</body>
+
+</html>

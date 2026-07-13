@@ -1,0 +1,3004 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+
+Project Details • Noctis Technologies
+
+</title>
+
+<meta name="description"
+content="Explore a featured project completed by Noctis Technologies.">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<style>
+
+/* Project Details CSS */
+/*==================================================
+                    RESET
+==================================================*/
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+}
+
+:root{
+
+--primary:#E11D2E;
+
+--background:#050505;
+
+--card:#111111;
+
+--white:#FFFFFF;
+
+--text:#B6B6B6;
+
+--border:#262626;
+
+--transition:.35s ease;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+font-family:"Inter",sans-serif;
+
+background:var(--background);
+
+color:var(--white);
+
+line-height:1.7;
+
+overflow-x:hidden;
+
+}
+
+img{
+
+display:block;
+
+max-width:100%;
+
+}
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+ul{
+
+list-style:none;
+
+}
+
+.container{
+
+width:min(1180px,92%);
+
+margin:auto;
+
+}
+
+section{
+
+padding:110px 0;
+
+}
+
+
+
+/*==================================================
+            SECTION HEADER
+==================================================*/
+
+.section-badge{
+
+display:inline-flex;
+
+padding:10px 18px;
+
+border-radius:100px;
+
+background:rgba(225,29,46,.12);
+
+border:1px solid rgba(225,29,46,.20);
+
+color:var(--primary);
+
+font-size:13px;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+margin-bottom:20px;
+
+}
+
+.section-header{
+
+max-width:760px;
+
+margin:0 auto 70px;
+
+text-align:center;
+
+}
+
+.section-header h2{
+
+font-family:"Sora",sans-serif;
+
+font-size:48px;
+
+line-height:1.15;
+
+margin:20px 0;
+
+}
+
+.section-header p{
+
+color:var(--text);
+
+font-size:17px;
+
+line-height:1.9;
+
+}
+
+
+
+/*==================================================
+                HEADER
+==================================================*/
+
+.header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+background:rgba(5,5,5,.92);
+
+backdrop-filter:blur(18px);
+
+border-bottom:1px solid var(--border);
+
+z-index:1000;
+
+}
+
+.navbar{
+
+height:82px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+}
+
+.logo img{
+
+height:44px;
+
+}
+
+.nav-menu{
+
+display:flex;
+
+gap:36px;
+
+}
+
+.nav-menu a{
+
+color:#D6D6D6;
+
+transition:.3s;
+
+}
+
+.nav-menu a:hover{
+
+color:var(--primary);
+
+}
+
+
+
+/*==================================================
+                BUTTON
+==================================================*/
+
+.btn-primary{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:16px 34px;
+
+background:var(--primary);
+
+border-radius:16px;
+
+font-weight:700;
+
+transition:var(--transition);
+
+}
+
+.btn-primary:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 18px 40px rgba(225,29,46,.28);
+
+}
+
+
+
+/*==================================================
+            PROJECT HERO
+==================================================*/
+
+.project-hero{
+
+padding:170px 0 120px;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.project-hero::before{
+
+content:"";
+
+position:absolute;
+
+width:420px;
+
+height:420px;
+
+right:-120px;
+
+top:-120px;
+
+background:rgba(225,29,46,.12);
+
+border-radius:50%;
+
+filter:blur(120px);
+
+}
+
+.project-grid{
+
+display:grid;
+
+gap:70px;
+
+align-items:center;
+
+}
+
+.project-content{
+
+position:relative;
+
+z-index:2;
+
+}
+
+.project-content h1{
+
+font-family:"Sora",sans-serif;
+
+font-size:58px;
+
+line-height:1.1;
+
+margin:24px 0;
+
+}
+
+.project-content p{
+
+color:var(--text);
+
+font-size:17px;
+
+line-height:1.9;
+
+margin-bottom:38px;
+
+max-width:620px;
+
+}
+
+.project-image img{
+
+width:100%;
+
+border-radius:30px;
+
+border:1px solid var(--border);
+
+}
+
+
+
+/*==================================================
+            PROJECT META
+==================================================*/
+
+.project-meta{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+}
+
+.project-meta div{
+
+background:var(--card);
+
+border:1px solid var(--border);
+
+border-radius:18px;
+
+padding:20px;
+
+}
+
+.project-meta strong{
+
+display:block;
+
+margin-bottom:8px;
+
+font-family:"Sora",sans-serif;
+
+}
+
+.project-meta span{
+
+color:var(--text);
+
+}
+
+
+
+/*==================================================
+            RESPONSIVE
+==================================================*/
+
+@media(min-width:992px){
+
+.project-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+}
+
+@media(max-width:991px){
+
+.nav-menu{
+
+display:none;
+
+}
+
+.project-content h1{
+
+font-size:42px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.project-meta{
+
+grid-template-columns:1fr;
+
+}
+
+}
+/*==================================================
+            PROJECT OVERVIEW
+==================================================*/
+
+.project-overview{
+
+    padding:120px 0;
+
+}
+
+.overview-grid{
+
+    display:grid;
+
+    gap:70px;
+
+    align-items:start;
+
+}
+
+.overview-content h2{
+
+    font-family:"Sora",sans-serif;
+
+    font-size:46px;
+
+    line-height:1.15;
+
+    margin:22px 0;
+
+}
+
+.overview-content p{
+
+    color:var(--text);
+
+    line-height:1.9;
+
+    margin-bottom:24px;
+
+}
+
+
+
+/*==================================================
+            PROJECT INFO BOXES
+==================================================*/
+
+.overview-info{
+
+    display:grid;
+
+    gap:20px;
+
+}
+
+.info-box{
+
+    background:linear-gradient(180deg,#141414,#0B0B0B);
+
+    border:1px solid var(--border);
+
+    border-radius:22px;
+
+    padding:24px;
+
+    transition:var(--transition);
+
+}
+
+.info-box:hover{
+
+    transform:translateX(6px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 50px rgba(225,29,46,.12);
+
+}
+
+.info-box h4{
+
+    font-family:"Sora",sans-serif;
+
+    font-size:18px;
+
+    margin-bottom:10px;
+
+}
+
+.info-box p{
+
+    color:var(--text);
+
+    margin:0;
+
+}
+
+
+
+/*==================================================
+            PROJECT FEATURES
+==================================================*/
+
+.project-features{
+
+    padding:120px 0;
+
+}
+
+.features-grid{
+
+    display:grid;
+
+    gap:24px;
+
+}
+
+.feature-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:linear-gradient(180deg,#141414,#0B0B0B);
+
+    border:1px solid var(--border);
+
+    border-radius:28px;
+
+    padding:36px 30px;
+
+    transition:var(--transition);
+
+}
+
+.feature-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    top:-90px;
+
+    right:-90px;
+
+    border-radius:50%;
+
+    background:rgba(225,29,46,.08);
+
+    filter:blur(80px);
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 28px 70px rgba(225,29,46,.14);
+
+}
+
+.feature-card:hover::before{
+
+    opacity:1;
+
+}
+
+.feature-card img{
+
+    width:56px;
+
+    margin-bottom:22px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.feature-card h3{
+
+    position:relative;
+
+    z-index:2;
+
+    font-family:"Sora",sans-serif;
+
+    font-size:24px;
+
+    margin-bottom:16px;
+
+}
+
+.feature-card p{
+
+    position:relative;
+
+    z-index:2;
+
+    color:var(--text);
+
+    line-height:1.8;
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(min-width:992px){
+
+    .overview-grid{
+
+        grid-template-columns:1fr .9fr;
+
+    }
+
+}
+
+@media(min-width:768px){
+
+    .features-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(min-width:1200px){
+
+    .features-grid{
+
+        grid-template-columns:repeat(4,1fr);
+
+    }
+
+}
+
+@media(max-width:991px){
+
+    .overview-content h2{
+
+        font-size:38px;
+
+    }
+
+}
+
+@media(max-width:767px){
+
+    .feature-card{
+
+        padding:30px 24px;
+
+    }
+
+    .feature-card h3{
+
+        font-size:22px;
+
+    }
+
+    .overview-content h2{
+
+        font-size:32px;
+
+    }
+
+}
+/*==================================================
+        CHALLENGE & SOLUTION
+==================================================*/
+
+.project-story,
+
+.project-solution{
+
+    padding:120px 0;
+
+}
+
+.story-grid,
+
+.solution-grid{
+
+    display:grid;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.story-image img,
+
+.solution-image img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:30px;
+
+    border:1px solid var(--border);
+
+    transition:var(--transition);
+
+}
+
+.story-image:hover img,
+
+.solution-image:hover img{
+
+    transform:translateY(-8px);
+
+}
+
+.story-content h2,
+
+.solution-content h2{
+
+    font-family:"Sora",sans-serif;
+
+    font-size:46px;
+
+    line-height:1.15;
+
+    margin:22px 0;
+
+}
+
+.story-content p,
+
+.solution-content p{
+
+    color:var(--text);
+
+    line-height:1.9;
+
+    margin-bottom:24px;
+
+}
+
+
+
+/*==================================================
+            SOLUTION LIST
+==================================================*/
+
+.solution-list{
+
+    display:grid;
+
+    gap:18px;
+
+    margin-top:32px;
+
+}
+
+.solution-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    padding:18px 22px;
+
+    transition:var(--transition);
+
+}
+
+.solution-item:hover{
+
+    transform:translateX(6px);
+
+    border-color:var(--primary);
+
+}
+
+.solution-item img{
+
+    width:34px;
+
+    flex-shrink:0;
+
+}
+
+.solution-item span{
+
+    color:#F2F2F2;
+
+    font-weight:500;
+
+}
+
+
+
+/*==================================================
+            PROJECT RESULTS
+==================================================*/
+
+.project-results{
+
+    padding:120px 0;
+
+}
+
+.results-grid{
+
+    display:grid;
+
+    gap:24px;
+
+}
+
+.result-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:linear-gradient(180deg,#141414,#0B0B0B);
+
+    border:1px solid var(--border);
+
+    border-radius:28px;
+
+    padding:36px 30px;
+
+    text-align:center;
+
+    transition:var(--transition);
+
+}
+
+.result-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    top:-90px;
+
+    right:-90px;
+
+    border-radius:50%;
+
+    background:rgba(225,29,46,.08);
+
+    filter:blur(80px);
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.result-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 28px 70px rgba(225,29,46,.14);
+
+}
+
+.result-card:hover::before{
+
+    opacity:1;
+
+}
+
+.result-card img{
+
+    width:56px;
+
+    margin:0 auto 22px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.result-card h3{
+
+    position:relative;
+
+    z-index:2;
+
+    font-family:"Sora",sans-serif;
+
+    font-size:24px;
+
+    margin-bottom:16px;
+
+}
+
+.result-card p{
+
+    position:relative;
+
+    z-index:2;
+
+    color:var(--text);
+
+    line-height:1.8;
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(min-width:992px){
+
+    .story-grid,
+
+    .solution-grid{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+
+@media(min-width:768px){
+
+    .results-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(min-width:1200px){
+
+    .results-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+@media(max-width:991px){
+
+    .story-content h2,
+
+    .solution-content h2{
+
+        font-size:38px;
+
+    }
+
+}
+
+@media(max-width:767px){
+
+    .story-grid,
+
+    .solution-grid{
+
+        gap:40px;
+
+    }
+
+    .result-card{
+
+        padding:30px 24px;
+
+    }
+
+    .story-content h2,
+
+    .solution-content h2{
+
+        font-size:32px;
+
+    }
+
+}
+/*==================================================
+                PROJECT GALLERY
+==================================================*/
+
+.project-gallery{
+
+padding:120px 0;
+
+}
+
+.gallery-grid{
+
+display:grid;
+
+gap:24px;
+
+}
+
+.gallery-item{
+
+overflow:hidden;
+
+border-radius:28px;
+
+border:1px solid var(--border);
+
+background:var(--card);
+
+transition:var(--transition);
+
+}
+
+.gallery-item.large{
+
+grid-column:span 2;
+
+}
+
+.gallery-item img{
+
+width:100%;
+
+display:block;
+
+transition:.45s;
+
+}
+
+.gallery-item:hover{
+
+border-color:var(--primary);
+
+box-shadow:0 28px 70px rgba(225,29,46,.14);
+
+}
+
+.gallery-item:hover img{
+
+transform:scale(1.05);
+
+}
+
+
+
+/*==================================================
+            CLIENT FEEDBACK
+==================================================*/
+
+.client-feedback{
+
+padding:120px 0;
+
+}
+
+.feedback-box{
+
+max-width:900px;
+
+margin:auto;
+
+text-align:center;
+
+background:linear-gradient(180deg,#141414,#0B0B0B);
+
+border:1px solid var(--border);
+
+border-radius:32px;
+
+padding:70px 50px;
+
+}
+
+.feedback-box h2{
+
+font-family:"Sora",sans-serif;
+
+font-size:44px;
+
+margin:24px 0;
+
+}
+
+.feedback-box blockquote{
+
+font-size:20px;
+
+font-style:italic;
+
+color:var(--text);
+
+line-height:1.9;
+
+margin:30px 0;
+
+}
+
+.client-info{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:18px;
+
+margin-top:30px;
+
+}
+
+.client-info img{
+
+width:70px;
+
+height:70px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:2px solid var(--primary);
+
+}
+
+.client-info h4{
+
+font-family:"Sora",sans-serif;
+
+font-size:20px;
+
+margin-bottom:6px;
+
+}
+
+.client-info p{
+
+color:var(--text);
+
+}
+
+
+
+/*==================================================
+            PROJECT SUMMARY
+==================================================*/
+
+.project-summary{
+
+padding:120px 0;
+
+}
+
+.summary-grid{
+
+display:grid;
+
+gap:24px;
+
+}
+
+.summary-card{
+
+background:linear-gradient(180deg,#141414,#0B0B0B);
+
+border:1px solid var(--border);
+
+border-radius:28px;
+
+padding:36px 30px;
+
+text-align:center;
+
+transition:var(--transition);
+
+}
+
+.summary-card:hover{
+
+transform:translateY(-8px);
+
+border-color:var(--primary);
+
+box-shadow:0 28px 70px rgba(225,29,46,.14);
+
+}
+
+.summary-card img{
+
+width:56px;
+
+margin:0 auto 22px;
+
+}
+
+.summary-card h3{
+
+font-family:"Sora",sans-serif;
+
+font-size:24px;
+
+margin-bottom:16px;
+
+}
+
+.summary-card p{
+
+color:var(--text);
+
+line-height:1.8;
+
+}
+
+
+
+/*==================================================
+                    CTA
+==================================================*/
+
+.cta{
+
+padding:120px 0;
+
+}
+
+.cta-box{
+
+text-align:center;
+
+background:linear-gradient(180deg,#141414,#090909);
+
+border:1px solid var(--border);
+
+border-radius:32px;
+
+padding:90px 50px;
+
+}
+
+.cta-box h2{
+
+font-family:"Sora",sans-serif;
+
+font-size:52px;
+
+margin:22px 0;
+
+}
+
+.cta-box p{
+
+max-width:700px;
+
+margin:auto;
+
+color:var(--text);
+
+line-height:1.9;
+
+}
+
+.cta-buttons{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:18px;
+
+margin-top:40px;
+
+}
+
+
+
+/*==================================================
+                    FOOTER
+==================================================*/
+
+.footer{
+
+border-top:1px solid var(--border);
+
+padding:80px 0 30px;
+
+}
+
+.footer-grid{
+
+display:grid;
+
+gap:40px;
+
+}
+
+.footer-logo img{
+
+height:46px;
+
+margin-bottom:24px;
+
+}
+
+.footer-social{
+
+display:flex;
+
+gap:16px;
+
+margin-top:24px;
+
+}
+
+.footer-social a{
+
+width:48px;
+
+height:48px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:var(--card);
+
+border:1px solid var(--border);
+
+border-radius:14px;
+
+transition:var(--transition);
+
+}
+
+.footer-social a:hover{
+
+border-color:var(--primary);
+
+transform:translateY(-4px);
+
+}
+
+.footer-social img{
+
+width:20px;
+
+}
+
+.footer h3{
+
+font-family:"Sora",sans-serif;
+
+margin-bottom:18px;
+
+}
+
+.footer p,
+
+.footer li{
+
+color:var(--text);
+
+line-height:1.9;
+
+margin-bottom:12px;
+
+}
+
+.footer-links a:hover{
+
+color:var(--primary);
+
+}
+
+.footer-bottom{
+
+margin-top:60px;
+
+padding-top:24px;
+
+border-top:1px solid var(--border);
+
+text-align:center;
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(min-width:768px){
+
+.gallery-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.summary-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-grid{
+
+grid-template-columns:2fr 1fr 1fr 1fr;
+
+}
+
+}
+
+@media(min-width:1200px){
+
+.summary-grid{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+}
+
+@media(max-width:767px){
+
+.gallery-item.large{
+
+grid-column:auto;
+
+}
+
+.feedback-box{
+
+padding:50px 24px;
+
+}
+
+.feedback-box h2{
+
+font-size:34px;
+
+}
+
+.feedback-box blockquote{
+
+font-size:17px;
+
+}
+
+.cta-box{
+
+padding:60px 24px;
+
+}
+
+.cta-box h2{
+
+font-size:34px;
+
+}
+
+.cta-buttons{
+
+flex-direction:column;
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="container">
+
+<nav class="navbar">
+
+<a href="index.html"
+
+class="logo">
+
+<img src="logo.svg"
+
+alt="Noctis Technologies">
+
+</a>
+
+<ul class="nav-menu">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="services.html">Services</a></li>
+
+<li><a href="portfolio.html">Portfolio</a></li>
+
+<li><a href="team.html">Team</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<a href="contact.html"
+
+class="btn-primary">
+
+Start Project
+
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<main>
+
+<section class="project-hero">
+
+<div class="container">
+
+<div class="project-grid">
+
+<div class="project-content">
+
+<span class="section-badge">
+
+FEATURED PROJECT
+
+</span>
+
+<h1>
+
+Corporate
+Business
+Website
+
+</h1>
+
+<p>
+
+A premium business website
+designed to improve credibility,
+performance and user engagement
+through modern web technologies.
+
+</p>
+
+<div class="project-meta">
+
+<div>
+
+<strong>
+
+Client
+
+</strong>
+
+<span>
+
+Confidential
+
+</span>
+
+</div>
+
+<div>
+
+<strong>
+
+Category
+
+</strong>
+
+<span>
+
+Business Website
+
+</span>
+
+</div>
+
+<div>
+
+<strong>
+
+Duration
+
+</strong>
+
+<span>
+
+3 Weeks
+
+</span>
+
+</div>
+
+<div>
+
+<strong>
+
+Platform
+
+</strong>
+
+<span>
+
+Responsive Web
+
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="project-image">
+
+<img src="project-feature.webp"
+
+alt="Featured Project">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!--==========================================
+            PROJECT OVERVIEW
+===========================================-->
+
+<section class="project-overview">
+
+<div class="container">
+
+<div class="overview-grid">
+
+<div class="overview-content">
+
+<span class="section-badge">
+
+PROJECT OVERVIEW
+
+</span>
+
+<h2>
+
+Creating A Modern
+Digital Presence
+
+</h2>
+
+<p>
+
+The objective of this project was to
+develop a modern, responsive business
+website that communicates professionalism,
+builds customer confidence and delivers
+an excellent user experience across all
+devices.
+
+</p>
+
+<p>
+
+The final solution combines elegant
+design, intuitive navigation, responsive
+layouts and performance-focused
+development to help strengthen the
+client's digital presence.
+
+</p>
+
+</div>
+
+
+
+<div class="overview-info">
+
+<div class="info-box">
+
+<h4>
+
+Industry
+
+</h4>
+
+<p>
+
+Corporate Business
+
+</p>
+
+</div>
+
+
+
+<div class="info-box">
+
+<h4>
+
+Services
+
+</h4>
+
+<p>
+
+Website Design & Development
+
+</p>
+
+</div>
+
+
+
+<div class="info-box">
+
+<h4>
+
+Technology
+
+</h4>
+
+<p>
+
+HTML5 • CSS3 • JavaScript
+
+</p>
+
+</div>
+
+
+
+<div class="info-box">
+
+<h4>
+
+Responsive
+
+</h4>
+
+<p>
+
+Desktop • Tablet • Mobile
+
+</p>
+
+</div>
+
+
+
+<div class="info-box">
+
+<h4>
+
+Optimisation
+
+</h4>
+
+<p>
+
+Performance & SEO Ready
+
+</p>
+
+</div>
+
+
+
+<div class="info-box">
+
+<h4>
+
+Project Status
+
+</h4>
+
+<p>
+
+Successfully Delivered
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!--==========================================
+            PROJECT FEATURES
+===========================================-->
+
+<section class="project-features">
+
+<div class="container">
+
+<div class="section-header">
+
+<span class="section-badge">
+
+KEY FEATURES
+
+</span>
+
+<h2>
+
+Highlights Of
+The Project
+
+</h2>
+
+<p>
+
+Every element was designed to deliver
+a premium experience while supporting
+long-term business growth.
+
+</p>
+
+</div>
+
+<div class="features-grid">
+
+<article class="feature-card">
+
+<img src="responsive.svg"
+
+alt="Responsive">
+
+<h3>
+
+Responsive Design
+
+</h3>
+
+<p>
+
+Optimised for desktop,
+tablet and mobile devices.
+
+</p>
+
+</article>
+
+
+
+<article class="feature-card">
+
+<img src="speed.svg"
+
+alt="Performance">
+
+<h3>
+
+High Performance
+
+</h3>
+
+<p>
+
+Fast loading pages with
+optimised assets.
+
+</p>
+
+</article>
+
+
+
+<article class="feature-card">
+
+<img src="seo.svg"
+
+alt="SEO">
+
+<h3>
+
+SEO Ready
+
+</h3>
+
+<p>
+
+Built using structured
+semantic HTML.
+
+</p>
+
+</article>
+
+
+
+<article class="feature-card">
+
+<img src="security.svg"
+
+alt="Security">
+
+<h3>
+
+Secure
+
+</h3>
+
+<p>
+
+Modern development
+practices and reliable
+implementation.
+
+</p>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+<!--==========================================
+        CHALLENGE & SOLUTION
+===========================================-->
+
+<section class="project-story">
+
+<div class="container">
+
+<div class="story-grid">
+
+<div class="story-content">
+
+<span class="section-badge">
+
+THE CHALLENGE
+
+</span>
+
+<h2>
+
+Understanding
+The Project
+Objectives
+
+</h2>
+
+<p>
+
+The client required a professional
+digital presence capable of improving
+credibility, presenting services clearly
+and providing an intuitive browsing
+experience across every device.
+
+</p>
+
+<p>
+
+The website also needed to remain
+fast, scalable and easy to maintain,
+while reflecting a modern and
+professional brand identity.
+
+</p>
+
+</div>
+
+
+
+<div class="story-image">
+
+<img src="project-challenge.webp"
+
+alt="Project Challenge">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!--==========================================
+            OUR SOLUTION
+===========================================-->
+
+<section class="project-solution">
+
+<div class="container">
+
+<div class="solution-grid">
+
+<div class="solution-image">
+
+<img src="project-solution.webp"
+
+alt="Project Solution">
+
+</div>
+
+
+
+<div class="solution-content">
+
+<span class="section-badge">
+
+OUR SOLUTION
+
+</span>
+
+<h2>
+
+A Modern,
+Scalable &
+Reliable Solution
+
+</h2>
+
+<p>
+
+Noctis Technologies designed and
+developed a responsive website using
+clean architecture, elegant layouts and
+performance-focused optimisation.
+
+</p>
+
+<div class="solution-list">
+
+<div class="solution-item">
+
+<img src="website.svg"
+
+alt="Website">
+
+<span>
+
+Premium Responsive Design
+
+</span>
+
+</div>
+
+<div class="solution-item">
+
+<img src="speed.svg"
+
+alt="Performance">
+
+<span>
+
+Fast Loading Experience
+
+</span>
+
+</div>
+
+<div class="solution-item">
+
+<img src="security.svg"
+
+alt="Security">
+
+<span>
+
+Reliable & Secure Development
+
+</span>
+
+</div>
+
+<div class="solution-item">
+
+<img src="seo.svg"
+
+alt="SEO">
+
+<span>
+
+Search Engine Ready Structure
+
+</span>
+
+</div>
+
+<div class="solution-item">
+
+<img src="analytics.svg"
+
+alt="Analytics">
+
+<span>
+
+Future Analytics Integration
+
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!--==========================================
+        TECHNOLOGIES & RESULTS
+===========================================-->
+
+<section class="project-results">
+
+<div class="container">
+
+<div class="section-header">
+
+<span class="section-badge">
+
+TECHNOLOGY
+
+</span>
+
+<h2>
+
+Built Using
+Modern Web
+Technologies
+
+</h2>
+
+<p>
+
+A carefully selected technology stack
+provides performance, reliability and
+future scalability.
+
+</p>
+
+</div>
+
+<div class="results-grid">
+
+<article class="result-card">
+
+<img src="html.svg"
+
+alt="HTML5">
+
+<h3>
+
+HTML5
+
+</h3>
+
+<p>
+
+Semantic and accessible
+page structure.
+
+</p>
+
+</article>
+
+
+
+<article class="result-card">
+
+<img src="css.svg"
+
+alt="CSS3">
+
+<h3>
+
+CSS3
+
+</h3>
+
+<p>
+
+Modern layouts,
+animations and styling.
+
+</p>
+
+</article>
+
+
+
+<article class="result-card">
+
+<img src="javascript.svg"
+
+alt="JavaScript">
+
+<h3>
+
+JavaScript
+
+</h3>
+
+<p>
+
+Interactive components
+and dynamic behaviour.
+
+</p>
+
+</article>
+
+
+
+<article class="result-card">
+
+<img src="responsive.svg"
+
+alt="Responsive">
+
+<h3>
+
+Responsive
+
+</h3>
+
+<p>
+
+Optimised for every
+screen size.
+
+</p>
+
+</article>
+
+
+
+<article class="result-card">
+
+<img src="speed.svg"
+
+alt="Performance">
+
+<h3>
+
+Performance
+
+</h3>
+
+<p>
+
+Efficient loading and
+smooth navigation.
+
+</p>
+
+</article>
+
+
+
+<article class="result-card">
+
+<img src="seo.svg"
+
+alt="SEO">
+
+<h3>
+
+SEO Ready
+
+</h3>
+
+<p>
+
+Structured for improved
+search visibility.
+
+</p>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+<!--==========================================
+            PROJECT GALLERY
+===========================================-->
+
+<section class="project-gallery">
+
+<div class="container">
+
+<div class="section-header">
+
+<span class="section-badge">
+
+PROJECT GALLERY
+
+</span>
+
+<h2>
+
+A Closer Look
+At The Final
+Experience
+
+</h2>
+
+<p>
+
+Preview key sections of the completed
+website, showcasing responsive layouts,
+modern interfaces and premium visual
+design.
+
+</p>
+
+</div>
+
+<div class="gallery-grid">
+
+<div class="gallery-item large">
+
+<img src="gallery-01.webp"
+
+alt="Homepage Design">
+
+</div>
+
+<div class="gallery-item">
+
+<img src="gallery-02.webp"
+
+alt="Services Page">
+
+</div>
+
+<div class="gallery-item">
+
+<img src="gallery-03.webp"
+
+alt="About Page">
+
+</div>
+
+<div class="gallery-item">
+
+<img src="gallery-04.webp"
+
+alt="Contact Page">
+
+</div>
+
+<div class="gallery-item">
+
+<img src="gallery-05.webp"
+
+alt="Mobile Version">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!--==========================================
+            CLIENT FEEDBACK
+===========================================-->
+
+<section class="client-feedback">
+
+<div class="container">
+
+<div class="feedback-box">
+
+<span class="section-badge">
+
+CLIENT FEEDBACK
+
+</span>
+
+<h2>
+
+Delivering Quality
+That Inspires
+Confidence
+
+</h2>
+
+<blockquote>
+
+"The finished website exceeded our
+expectations with its professional design,
+excellent performance and intuitive user
+experience. The project was delivered
+with great attention to detail."
+
+</blockquote>
+
+<div class="client-info">
+
+<img src="client-avatar.webp"
+
+alt="Client">
+
+<div>
+
+<h4>
+
+Confidential Client
+
+</h4>
+
+<p>
+
+Business Owner
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!--==========================================
+            PROJECT SUMMARY
+===========================================-->
+
+<section class="project-summary">
+
+<div class="container">
+
+<div class="section-header">
+
+<span class="section-badge">
+
+PROJECT SUMMARY
+
+</span>
+
+<h2>
+
+Project At
+A Glance
+
+</h2>
+
+<p>
+
+A concise overview of the project's
+key characteristics and deliverables.
+
+</p>
+
+</div>
+
+<div class="summary-grid">
+
+<article class="summary-card">
+
+<img src="website.svg"
+
+alt="Pages">
+
+<h3>
+
+Pages
+
+</h3>
+
+<p>
+
+Multi-page responsive
+website.
+
+</p>
+
+</article>
+
+
+
+<article class="summary-card">
+
+<img src="responsive.svg"
+
+alt="Devices">
+
+<h3>
+
+Devices
+
+</h3>
+
+<p>
+
+Desktop, tablet and
+mobile optimised.
+
+</p>
+
+</article>
+
+
+
+<article class="summary-card">
+
+<img src="speed.svg"
+
+alt="Performance">
+
+<h3>
+
+Performance
+
+</h3>
+
+<p>
+
+Optimised for speed
+and efficiency.
+
+</p>
+
+</article>
+
+
+
+<article class="summary-card">
+
+<img src="security.svg"
+
+alt="Security">
+
+<h3>
+
+Security
+
+</h3>
+
+<p>
+
+Developed using modern
+best practices.
+
+</p>
+
+</article>
+
+
+
+<article class="summary-card">
+
+<img src="seo.svg"
+
+alt="SEO">
+
+<h3>
+
+SEO Ready
+
+</h3>
+
+<p>
+
+Structured for improved
+search visibility.
+
+</p>
+
+</article>
+
+
+
+<article class="summary-card">
+
+<img src="maintenance.svg"
+
+alt="Support">
+
+<h3>
+
+Support
+
+</h3>
+
+<p>
+
+Prepared for future
+maintenance and updates.
+
+</p>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+<!--==========================================
+            NEXT PROJECT CTA
+===========================================-->
+
+<section class="cta">
+
+<div class="container">
+
+<div class="cta-box">
+
+<span class="section-badge">
+
+START YOUR PROJECT
+
+</span>
+
+<h2>
+
+Ready To Build
+Your Next
+Success Story?
+
+</h2>
+
+<p>
+
+Whether you require a premium business
+website, an e-commerce platform or a
+bespoke digital solution, Noctis Technologies
+is ready to transform your vision into an
+exceptional digital experience.
+
+</p>
+
+<div class="cta-buttons">
+
+<a href="contact.html"
+
+class="btn-primary">
+
+Request A Consultation
+
+</a>
+
+<a href="portfolio.html"
+
+class="btn-secondary">
+
+Explore More Projects
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!--==========================================
+                FOOTER
+===========================================-->
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="footer-grid">
+
+
+
+<div class="footer-about">
+
+<a href="index.html"
+
+class="footer-logo">
+
+<img src="logo.svg"
+
+alt="Noctis Technologies">
+
+</a>
+
+<p>
+
+Creating premium digital experiences
+through modern design, innovative
+development and reliable technology
+for businesses worldwide.
+
+</p>
+
+<div class="footer-social">
+
+<a href="#">
+
+<img src="facebook.svg"
+
+alt="Facebook">
+
+</a>
+
+<a href="#">
+
+<img src="instagram.svg"
+
+alt="Instagram">
+
+</a>
+
+<a href="#">
+
+<img src="linkedin.svg"
+
+alt="LinkedIn">
+
+</a>
+
+<a href="#">
+
+<img src="github-social.svg"
+
+alt="GitHub">
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="footer-links">
+
+<h3>
+
+Quick Links
+
+</h3>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="services.html">Services</a></li>
+
+<li><a href="portfolio.html">Portfolio</a></li>
+
+<li><a href="team.html">Team</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+
+
+<div class="footer-services">
+
+<h3>
+
+Services
+
+</h3>
+
+<ul>
+
+<li>Business Websites</li>
+
+<li>E-Commerce Solutions</li>
+
+<li>Landing Pages</li>
+
+<li>SEO Optimisation</li>
+
+<li>Business Automation</li>
+
+<li>Website Maintenance</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="footer-contact">
+
+<h3>
+
+Contact
+
+</h3>
+
+<ul>
+
+<li>
+
+<img src="mail.svg"
+
+alt="Email">
+
+hello@noctistechnologies.com
+
+</li>
+
+<li>
+
+<img src="phone.svg"
+
+alt="Phone">
+
++91 XXXXX XXXXX
+
+</li>
+
+<li>
+
+<img src="location.svg"
+
+alt="Location">
+
+Tamil Nadu, India
+
+</li>
+
+<li>
+
+<img src="clock.svg"
+
+alt="Business Hours">
+
+Mon–Sat • 10:00 AM – 7:00 PM
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+
+<div class="footer-bottom">
+
+<p>
+
+© 2026 Noctis Technologies. All Rights Reserved.
+
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+</main>
+
+<script src="index.js"></script>
+
+</body>
+
+</html>
